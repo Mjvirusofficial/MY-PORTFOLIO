@@ -1,0 +1,78 @@
+.card{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.learn{
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid rgb(126, 126, 223);
+    color: black;
+    background-color: white;
+  }
+  
+  .learn:hover{
+    background-color: rgb(126, 126, 223);
+    color: white;
+  }
+
+  .cardimg{
+    height:250px;
+  }
+
+  /*DSA*/
+
+  .heading{
+    margin-top: 10px;
+  }
+
+  .detail{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem; 
+    margin-top: 0px;
+  }
+
+  .hrline{
+    color: rgb(126, 126, 223);
+  }
+
+.feed{
+    text-decoration: none;
+    color: black;
+}
+
+.feed:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* classification of Data structure */
+
+
+
+
+/* Leetcode  */
+.ankr{
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+}
+
+
+.ankr:hover{
+  transition: 0.5s;
+  background-color:  rgb(126, 126, 223);
+  color: white;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.main{
+  background-color: yellow;
+}

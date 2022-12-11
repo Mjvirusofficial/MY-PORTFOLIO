@@ -1,0 +1,39 @@
+.heading{
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.video{
+    width: 480px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.title{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.description{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.homebtn a{
+    text-decoration: none;
+    color: black;
+}
+
+.homebtn a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/* .p{
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid rgb(126, 126, 223);
+} */
+

@@ -1,0 +1,146 @@
+
+.me{
+    color: rgb(126, 126, 223);
+    font-family: 'Ubuntu', sans-serif;
+    
+  }
+  
+  .about{
+    font-family: 'Ubuntu', sans-serif;
+  
+  }
+  .line{
+    color:  blue;
+    font-weight: bolder;
+    width: 13rem;
+    height: 50px;
+  }
+  
+  .mypic{
+  height: 10%;
+  }
+  
+  .image{
+    border-radius: 6px;
+  }
+  .bio{
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .my-name{
+    font-size: 1.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+    margin-bottom: 10px;
+  }
+  
+  .desc{
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .array{
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .desc h2{
+    margin-bottom:18px;
+    font-size:25px;
+  }
+
+  .b{
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .b:hover{
+    background-color:green;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .cv {
+    background-color:green;
+    color: white;
+    transition: 0.8s;
+    border-radius: 5px;
+    border: 2px solid green;
+  }
+
+  .cv a{
+   color: white;
+   text-decoration: none;
+  }
+
+  
+  .cv a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+   }
+
+  .b a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .b a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  /* .text-box{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    display: flex;
+  }
+  
+  .fixed-text{
+    display: inline-block;
+    margin-right: 7px;
+    vertical-align: top;
+  }
+  
+  .amimated{
+    display: inline-block;
+    height: 113px;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  
+  .animated span{
+    position: relative;
+    color: rgb(126, 126, 223);
+    display: block;
+  }
+  
+  .animated span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 130%;
+    right: 0px;
+    background-color: white;
+    border-left: 2px solid black;
+    animation: 4s textType;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes textType {
+    0%{
+      left:0;
+    }
+    50%{
+      left:100%;
+    }
+    100%{
+      left:0;
+    }
+  } */
+
+ 
