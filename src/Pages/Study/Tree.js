@@ -1,4 +1,11 @@
 import React from 'react'
+import fbt from './Img/fbt.png';
+import pbt from './Img/pbt.jpg';
+import cbt from './Img/cbt.jpg';
+import dbt from './Img/dbt.png';
+import sbt from './Img/skewedbt.png';
+
+
 
 function Tree() {
     return (
@@ -36,18 +43,53 @@ function Tree() {
 
                     <p><b className=''><i class="fa-brands fa-react"></i> TYPES OF BINARY TREE:-</b></p>
 
-                    <p><b className="">1. Full Binary Tree:-</b> Full binary tree is a type of binary tree where each nodes can have either 0 or two child.
-                    </p>
+                    {/* <div className="row"> */}
+                    <div className="col-12 col-lg-8">
+                        <p><b className="">1. Full Binary Tree:-</b> Full binary tree is a type of binary tree where each nodes can have either 0 or two child.</p>
+                    </div>
 
-                    <p><b className="">2.Perfect Binary Tree:-</b> There are two condition to make a perfect binary tree.</p>
-                    <p><b className='main'>First is every internal nodes can have two child</b></p>
-                    <p><b className='main'>And second is all leaf nodes are on same level </b></p>
+                    <div className="col-12 col-lg-4">
+                        <img src={fbt} class="card-img-top cardimg" alt="Full Binary Tree" />
+                    </div>
+                    {/* </div> */}
 
-                    <p><b className="">3. Complete Binary Tree:-</b> In complete binary tree all levels are completely filled except possibly the last level</p>
-                    <p><b className="main">Last level must have its key as left as possible.</b></p>
+                    {/* <div className="row"> */}
+                    <div className="col-12 col-lg-8">
+                        <p><b className="">2.Perfect Binary Tree:-</b> There are two condition to make a perfect binary tree.</p>
+                        <p><b className='main'>First is every internal nodes can have two child</b></p>
+                        <p><b className='main'>And second is all leaf nodes are on same level </b></p>
+                    </div>
 
+                    <div className="col-12 col-lg-4">
+                        <img src={pbt} class="card-img-top cardimg" alt="Perfect Binary Tree" />
+                    </div>
 
-                    <p><b className="">4. Degenerate Binary Tree:-</b> Every parents node has exactly one child.</p>
+                    {/* </div> */}
+                    <div className="col-12 col-lg-8">
+
+                        <p><b className="">3. Complete Binary Tree:-</b> In complete binary tree all levels are completely filled except possibly the last level</p>
+                        <p><b className="main">Last level must have its key as left as possible.</b></p>
+                    </div>
+                    <div className="col-12 col-lg-4">
+                        <img src={cbt} class="card-img-top cardimg" alt="..." />
+                    </div>
+
+                    <div className="col-12 col-lg-8">
+
+                        <p><b className="">4. Degenerate Binary Tree:-</b> Every parents node has exactly one child.</p>
+                    </div>
+                    <div className="col-12 col-lg-4">
+                        <img src={dbt} class="card-img-top cardimg" alt="Degenerate Binary Tree" />
+                    </div>
+
+                    <div className="col-12 col-lg-8">
+
+                        <p><b className="">4. Skewed Binary Tree:-</b> All nodes have only one child except the last one (leaf) which hasn't a child. It divided into two types: left skewed binary tree and right skewed binary tree.</p>
+                    </div>
+                    <div className="col-12 col-lg-4">
+                        <img src={sbt} class="card-img-top cardimg" alt="Degenerate Binary Tree" />
+                    </div>
+
                 </div>
             </div><hr />
 
@@ -92,7 +134,7 @@ function Tree() {
 
             <div className="container-fluid">
                 <div className="row detail">
-                
+
                 </div>
             </div>
 

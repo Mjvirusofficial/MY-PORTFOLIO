@@ -54,6 +54,29 @@ function Leetcode() {
         </div><hr/>
 
 
+        <div className="container-fluid">
+        <div className="row detail">
+            <h1><b className='leet'>Tree Problems</b></h1>
+        </div>
+            <div className="row detail">
+            {/* <p><b className='detail'>From GFG</b></p> */}
+            <p><b>Problem 1:</b> Given the root of a binary tree, return the preorder traversal of its nodes' values. || <span className='title'><a className='ankr'  href="https://leetcode.com/problems/binary-tree-preorder-traversal/">Binary Tree Preorder Traversal</a></span></p>
+            <p><b>Problem 2:</b> Given the root of a binary tree, return the postorder traversal of its nodes' values. || <span className='title'><a className='ankr'  href="https://leetcode.com/problems/binary-tree-postorder-traversal/">Binary Tree Postorder Traversal</a></span></p>
+            <p><b>Problem 3:</b> Given the root of a binary tree, return the inorder traversal of its nodes' values. || <span className='title'><a className='ankr'  href="https://leetcode.com/problems/binary-tree-inorder-traversal/">Binary Tree Inorder Traversal</a></span></p>
+            <p><b>Problem 4:</b> Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level). || <span className='title'><a className='ankr'  href="https://leetcode.com/problems/binary-tree-level-order-traversal/">Binary Tree Level Order Traversal</a></span></p>
+            <p><b>Problem 5:</b> Given the roots of two binary trees p and q, write a function to check if they are the same or not. || Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.|| <span className='title'><a className='ankr'  href="https://leetcode.com/problems/same-tree/">Same Tree</a></span></p>
+            <p><b>Problem 6:</b> Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center). || <span className='title'><a className='ankr'  href="https://leetcode.com/problems/symmetric-tree/">Symmetric Tree</a></span></p>
+           
+            <p><b>Problem 7:</b> Given the root of a binary tree, return its maximum depth. || A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.|| <span className='title'><a className='ankr'  href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">Maximum Depth of Binary Tree</a></span></p>
+            <p><b>Problem 8:</b> A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root. || The path sum of a path is the sum of the node's values in the path. || Given the root of a binary tree, return the maximum path sum of any non-empty path.|| <span className='title'><a className='ankr'  href="https://leetcode.com/problems/binary-tree-maximum-path-sum/">Binary Tree Maximum Path Sum</a></span></p>
+            {/* <p><b>Problem 9:</b> Given the root of a binary tree, return the inorder traversal of its nodes' values. || <span className='title'><a className='ankr'  href="">Binary Tree Maximum Path Sum</a></span></p>
+            <p><b>Problem 10:</b> Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level). || <span className='title'><a className='ankr'  href="https://leetcode.com/problems/binary-tree-level-order-traversal/">Binary Tree Level Order Traversal</a></span></p>
+            <p><b>Problem 11:</b> Given the roots of two binary trees p and q, write a function to check if they are the same or not. || Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.|| <span className='title'><a className='ankr'  href="https://leetcode.com/problems/same-tree/">Same Tree</a></span></p>
+            <p><b>Problem 12:</b> Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center). || <span className='title'><a className='ankr'  href="https://leetcode.com/problems/symmetric-tree/">Symmetric Tree</a></span></p> */}
+            </div>
+        </div><hr/>
+
+
     </div>
   )
 }

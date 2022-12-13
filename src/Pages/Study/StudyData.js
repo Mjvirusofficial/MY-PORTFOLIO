@@ -4,6 +4,8 @@ import ll from './Img/ll.js.jpeg'
 import leetcode from './Img/Leetcode.png'
 import energy from './Img/energy.jpg'
 import graph from './Img/graph.png'
+import oops from './Img/oops.png'
+import tree from './Img/tree2.jpg'
 
 
 // import Stack from './Img/Stack.js.mp4'
@@ -56,14 +58,14 @@ let StudyData = [
     },
 
     {
-        img: dsa,
+        img: oops,
         tittle: 'OOPS',
         desc: 'Oops stands for Object Oriented Programming Language, And the main purpose of oops is:-',
         visit: '/oops'
     },
 
     {
-        img: leetcode,
+        img: tree,
         tittle: 'Tree Data Structure',
         desc: 'Tree is a non-linear data structure which is hierarchical in nature.',
         visit: '/tree'
