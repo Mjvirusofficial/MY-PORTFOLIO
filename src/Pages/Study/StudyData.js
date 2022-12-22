@@ -6,6 +6,9 @@ import energy from './Img/energy.jpg'
 import graph from './Img/graph.png'
 import oops from './Img/oops.png'
 import tree from './Img/tree2.jpg'
+import js from './Img/js.jpg'
+import heap from './Img/heap3.png'
+
 
 
 // import Stack from './Img/Stack.js.mp4'
@@ -69,6 +72,20 @@ let StudyData = [
         tittle: 'Tree Data Structure',
         desc: 'Tree is a non-linear data structure which is hierarchical in nature.',
         visit: '/tree'
+    },
+
+    {
+        img: js,
+        tittle: 'Javacript',
+        desc: 'Tree is a non-linear data structure which is hierarchical in nature.',
+        visit: '/js'
+    },
+
+    {
+        img: heap,
+        tittle: 'Heap Data Structure',
+        desc: 'Heap data structure is a complete binary tree that satisfies the heap property.',
+        visit: '/heap'
     },
 ]
 

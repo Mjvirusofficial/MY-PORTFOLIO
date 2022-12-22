@@ -17,6 +17,8 @@ import Energy from './Pages/Study/Energy';
 import Leetcode from './Pages/Study/Leetcode';
 import Oops from './Pages/Study/Oops';
 import Tree from './Pages/Study/Tree';
+import Javascript from './Pages/Study/Javascript';
+import Heap from './Pages/Study/Heap';
 function App() {
   return (
     <>
@@ -36,6 +38,9 @@ function App() {
        <Route path='/leetcode' element={<Leetcode/>}/>
        <Route path='/oops' element={<Oops/>}/>
        <Route path='/tree' element={<Tree/>}/>
+       <Route path='/js' element={<Javascript/>}/>
+       <Route path='/heap' element={<Heap/>}/>
+
       </Routes>
       <Footer/>
     </>
