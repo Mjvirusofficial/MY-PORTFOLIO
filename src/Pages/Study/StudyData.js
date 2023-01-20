@@ -8,6 +8,8 @@ import oops from './Img/oops.png'
 import tree from './Img/tree2.jpg'
 import js from './Img/js.jpg'
 import heap from './Img/heap3.png'
+import discrete from './Img/discrete.jfif'
+
 
 
 
@@ -86,6 +88,20 @@ let StudyData = [
         tittle: 'Heap Data Structure',
         desc: 'Heap data structure is a complete binary tree that satisfies the heap property.',
         visit: '/heap'
+    },
+
+    {
+        img: heap,
+        tittle: 'Algoritham',
+        desc: 'Algoritham is an compulsory combination of sequence of finate step 🪜 to solve any problem.',
+        visit: '/algoritham'
+    },
+
+    {
+        img: discrete,
+        tittle: 'Discrete Structure',
+        desc: 'Discrete methematic is the part of methematic in which we study about discrete object. ',
+        visit: '/discrete'
     },
 ]
 

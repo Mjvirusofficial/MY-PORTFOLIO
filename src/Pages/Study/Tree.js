@@ -28,7 +28,7 @@ function Tree() {
 
 
                     <p><b>Q2. What is the maximum number of nodes in a binary tree of height H?</b></p>
-                    <p><b className='main'>Ans:-</b> Ans:- (2^h) -1(Same like questions no.1)
+                    <p><b className='main'>Ans:-</b> (2^h) -1(Same like questions no.1)
                         Dono questions ek hi h agar attention k sath dekho ge to😂</p>
                 </div>
             </div><hr />

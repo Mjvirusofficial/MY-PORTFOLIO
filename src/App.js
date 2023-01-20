@@ -19,6 +19,8 @@ import Oops from './Pages/Study/Oops';
 import Tree from './Pages/Study/Tree';
 import Javascript from './Pages/Study/Javascript';
 import Heap from './Pages/Study/Heap';
+import Algoritham from './Pages/Study/Algoritham';
+import Discreate from './Pages/Study/Discrete';
 function App() {
   return (
     <>
@@ -40,7 +42,8 @@ function App() {
        <Route path='/tree' element={<Tree/>}/>
        <Route path='/js' element={<Javascript/>}/>
        <Route path='/heap' element={<Heap/>}/>
-
+       <Route path='/algoritham' element={<Algoritham/>}/>
+       <Route path='/discrete' element={<Discreate/>}/>
       </Routes>
       <Footer/>
     </>

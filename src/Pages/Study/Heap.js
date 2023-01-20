@@ -79,7 +79,7 @@ function Heap() {
           <p><span className="main"><b>3.Right Child:- </b></span> (i X 2 ) + 2.
           </p>
           </div>
-        </div><hr />
+        </div><hr /> 
 
 
         <div className="container">

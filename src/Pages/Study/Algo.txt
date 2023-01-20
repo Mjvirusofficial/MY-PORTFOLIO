@@ -1,0 +1,77 @@
+#Algorithm:- It is a compulsory combination of sequence of finate step 🪜 to solve any problem.
+
+For e.g:- AddTwoNumbr(){
+1Step:- To take two nmbrs
+Step2:- Add two nmbrs and stored in c
+
+Step 3:- Print c
+} 
+
+See, here all steps are compulsory & it's combination of step.
+
+#Properties of an algorithm:-
+1. It should termimate also finite time.
+
+2. It should produced 1 output after terminating.
+
+3. It should take at least 0 or more input.
+
+4. It should be deterministic.
+Mtlb agar a = 2 or b = 3 h and answer stored in c , to a = 3, ya c = 2 , ya phir output c ke jagha b mai nii @aana chahiye.
+
+#Step required to write an Algorithm:-
+1. Know the  problem definition.
+2. Select algorithm or Design Algo.
+    (a) Divide & Conquer.
+    (b) Gredy Technique.
+    (c) Binary search.
+    (d) Back tracking.
+    (e) Dynamic Programming.
+
+3. Design a flow chart.
+4. Testing posible test cases.
+5. Implementation.
+6. Analysing it's time & space.
+
+Most important topics is:- 
+2. Design an algorithm 
+6. Analysing algorithm 
+
+#####Analysing algorithm######
+1.Time complexity:- Time complexity is based on two factor first is:-
+Compiled time of a program and 2nd is Run time of a program.
+
+Program Compile by compiler which is a software and Run by C.P.U which is a hardware.
+
+So, compiler time is less when it's written in some fast programming language like python or don't know what ever.
+
+And Rum tym is less when C.P.U or Hardware or Processor is fast.
+
+
+#Analysing an algorithm according to two factor Aposteriori analysis and Apriori analysis:- 
+
+Aposteriori analysis:-
+(a) It is dependent on language of a compiler and type of hardware (C.P.U)
+
+(b) It will give exact answer.
+
+(c) System to system time complexity change.
+
+(d) It rarely will use in some company.
+
+(e) It is also known as Relative analysis.
+
+Apriory analysis:-
+(a) It is independent on language of a compiler and type of hardware (C.P.U)
+
+(b) It will give approx answer.
+
+(c) System to system time complexity change.
+
+(d) Its always will use in some company.
+
+(e) It is also known as Absolute analysis.
+
+Finding time complexity:- Finding time complexity is nothing but the place where C.P.U spending more time, which is nothing but finding loop 
+
+Because loop is the place where C.P.U spends lot of time , it's run til a particular condition, condition may be < 5 or < 10^5 its all depends on programmer.
