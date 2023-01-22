@@ -36,7 +36,7 @@ function Leetcode() {
             <p><b>Problem 5:</b> You are given a string s consisting only of characters 'a' and 'b'​​​​. || You can delete any number of characters in s to make s balanced. s is balanced if there is no pair of indices (i,j)|| Return the minimum number of deletions needed to make s balanced. || <span className='title'><a className='ankr' href="https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/"> Minimum Deletions to Make String Balanced</a></span></p>
             <p><b>Problem 6:</b> At a lemonade stand, each lemonade costs $5. Customers are standing in a queue to buy from you and order one at a time (in the order specified by bills). Each customer will only buy one lemonade and pay with either a $5, $10, or $20 bill. You must provide the correct change to each customer so that the net transaction is that the customer pays $5. || <span className='title'><a className='ankr' href="https://leetcode.com/problems/lemonade-change/">Lemonade Change </a></span></p>
             <p><b>Problem 7:</b> There are n gas stations along a circular route, where the amount of gas at the ith station is gas[i]. || You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from the ith station to its next (i + 1)th station. You begin the journey with an empty tank at one of the gas stations. || <span className='title'><a className='ankr' href="https://leetcode.com/problems/gas-station/">Gas Station</a></span></p>
-            <p><b>Problem 8:</b>  || <span className='title'><a className='ankr' href=""> </a></span></p>
+            {/* <p><b>Problem 8:</b>  || <span className='title'><a className='ankr' href=""> </a></span></p> */}
 
             </div>
         </div><hr/>

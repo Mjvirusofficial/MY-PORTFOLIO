@@ -18,7 +18,7 @@ function Home() {
                 <TypeAnimation
                   sequence={[
                     'Developer',
-                    1000,
+                    2000,
                     'YouTuber',
                     1000,
                     'Gamer',
