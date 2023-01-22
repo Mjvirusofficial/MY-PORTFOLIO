@@ -352,7 +352,7 @@ and from eq(ii) we proved that X is an element of A' intersection B'.</p>
             <p>Number of binary operation on set.</p>
             <p>Supose, we have set G.</p>
             <p>Cardinality = |G| = n</p>
-            <p>f : g*g € G</p>
+            <p>f : g*g € G</p> 
             <p>    n  n     n</p>
             <p>So, the total number of binary operation is:- N to the power n square. || n^n^2.</p>
             <p>Example:- |G| = 2</p>
