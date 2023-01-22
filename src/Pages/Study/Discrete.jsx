@@ -373,7 +373,7 @@ and from eq(ii) we proved that X is an element of A' intersection B'.</p>
 
           </div>
         </div>
-      </div>
+      </div> 
 
       <div className="container">
         <h1 className='heading'><u></u></h1>
