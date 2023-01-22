@@ -136,10 +136,10 @@ function Discreate() {
         <div className="row">
           <div className="detail">
             <p>According to this law there are two sets || Set A and Set B then, ('):- is for compliment || u:- union || ulta u:- intersection.
-            </p>
-            <p><span className="main">1. (AuB)' = A' intersection B'</span></p>
-            <p><span className="main">2. (A intersection B)' = A' U B'
-            </span></p>
+</p>
+<p><span className="main">1. (AuB)' = A' intersection B'</span></p>
+<p><span className="main">2. (A intersection B)' = A' U B'
+</span></p>
 
           </div>
         </div>
@@ -159,9 +159,9 @@ function Discreate() {
             <p>== X € A' and X € B'</p>
             <p>== X € A' ulta u B'______(ii)</p>
             <p>So, in eq(i) X is an element of (AuB)'
-              and from eq(ii) we proved that X is an element of A' intersection B'.</p>
-            <p>That means (AuB)' = A' ulta u B'.....!
-              Proved#</p>
+and from eq(ii) we proved that X is an element of A' intersection B'.</p>
+<p>That means (AuB)' = A' ulta u B'.....!
+                                           Proved#</p>
 
           </div>
         </div>
@@ -174,29 +174,29 @@ function Discreate() {
       <div className="container-fluid">
         <div className="row">
           <div className="detail">
-            <p>Relation in set theory is a subset of cartitation product, If the element of two set is available in question.</p>
-            <p>Relation denoted by R.</p>
-            <p>You can write:- </p>
-            <p>(aRb) || (a,b) € R || R(a,b)</p>
-            <p> <span className="main">There are many types of Relation:-</span></p>
-            <p>1. Reflexive Relation</p>
-            <p>2. Ireflexive Relation</p>
-            <p>3. Symtric Relation</p>
-            <p>4.Asymtric Relation</p>
+        <p>Relation in set theory is a subset of cartitation product, If the element of two set is available in question.</p>
+        <p>Relation denoted by R.</p>
+        <p>You can write:- </p>
+        <p>(aRb) || (a,b) € R || R(a,b)</p>
+        <p> <span className="main">There are many types of Relation:-</span></p>
+        <p>1. Reflexive Relation</p>
+        <p>2. Ireflexive Relation</p>
+        <p>3. Symtric Relation</p>
+        <p>4.Asymtric Relation</p>
 
-            <p><span className="main">1.Reflexive Relation:-</span> A relation R on a  Set A is called Reflexive, if (a,a) € R holds for every element.</p>
-            <p>For e.g:- Set A = [1,2,3]</p>
-            <p>1.R = [(1,1) ,(2,2),(3,3)] :- Reflexive</p>
-            <p>2.R = [(1,1) ,(1,2),(3,3)] :- Not Reflexive</p>
+        <p><span className="main">1.Reflexive Relation:-</span> A relation R on a  Set A is called Reflexive, if (a,a) € R holds for every element.</p>
+        <p>For e.g:- Set A = [1,2,3]</p>
+        <p>1.R = [(1,1) ,(2,2),(3,3)] :- Reflexive</p>
+        <p>2.R = [(1,1) ,(1,2),(3,3)] :- Not Reflexive</p>
 
-            <p><span className="main">2.Ireflexive Relation:-</span> A relation R on a Set A is called Ireflexive, if(a,a) not € R for Eve element which is available in set.</p>
-            <p>For e.g:- Set A = [1,2,3]</p>
-            <p>1.R = [(1,2) ,(1,3),(2,3)] :- Ireflexive</p>
-            <p>2.R = [(1,1) ,(2,2),(3,3)] :- not Ireflexiv</p>
-            <p>3.R = [(1,2) ,(2,3),(1,3)] :- Ireflexive</p>
+        <p><span className="main">2.Ireflexive Relation:-</span> A relation R on a Set A is called Ireflexive, if(a,a) not € R for Eve element which is available in set.</p>
+        <p>For e.g:- Set A = [1,2,3]</p>
+        <p>1.R = [(1,2) ,(1,3),(2,3)] :- Ireflexive</p>
+        <p>2.R = [(1,1) ,(2,2),(3,3)] :- not Ireflexiv</p>
+        <p>3.R = [(1,2) ,(2,3),(1,3)] :- Ireflexive</p>
 
 
-            <p><span className="main">3.Symtric Relation:-</span> A relation R on a Set A is called Symtric, if(a,b) € R and also (b,a) € R,  for every element which is available in set.</p>
+        <p><span className="main">3.Symtric Relation:-</span> A relation R on a Set A is called Symtric, if(a,b) € R and also (b,a) € R,  for every element which is available in set.</p>
             <p>For e.g:- Set A = [1,3]</p>
             <p>1.R = [(1,3) ,(3,1)] :- Symtric </p>
             <p>2.R = [(1,3) ,(3,3)] :- Not Symtric</p>
@@ -320,7 +320,7 @@ function Discreate() {
 
               M number of Pigeonholes.</p>
 
-              <p>And we have to placed this N number of pigeon into  M number of pigeonholes but there is condition that <span className="main">N > M</span></p>
+              <p>And we have to placed this N number of pigeon into  M number of pigeonholes but there is condition that <span className="main">N is greter than M</span></p>
               <p>Then, atleast one Pigeonholes must contain more than one pigeon.</p>
               <p>For e.g:- N = 7 and M = 6;</p>
               <p>Since, see here Pigeon is 7 and Pigionholes is 6</p>
@@ -359,6 +359,30 @@ function Discreate() {
             <p>== 2^2*2</p>
             <p>== 2^4</p>
             <p>== 16 binary operation on this Set.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <h1 className='heading'><u></u></h1>
+      </div>
+
+      <div className="container-fluid">
+        <div className="row">
+          <div className="detail">
+
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <h1 className='heading'><u></u></h1>
+      </div>
+
+      <div className="container-fluid">
+        <div className="row">
+          <div className="detail">
+
           </div>
         </div>
       </div>
