@@ -24,6 +24,7 @@ function Queue() {
 
             <div className="col-12 col-lg-8 heading">
                 <h2><u>Implementation of a Queue.</u></h2>
+                
             </div>
 
             <div className="container-fluid">

@@ -21,6 +21,8 @@ import Javascript from './Pages/Study/Javascript';
 import Heap from './Pages/Study/Heap';
 import Algoritham from './Pages/Study/Algoritham';
 import Discreate from './Pages/Study/Discrete';
+import FourthSem from './Pages/Study/B.tech_4thSem/FourthSem';
+import Se from './Pages/Study/B.tech_4thSem/Se';
 function App() {
   return (
     <>
@@ -44,6 +46,10 @@ function App() {
        <Route path='/heap' element={<Heap/>}/>
        <Route path='/algoritham' element={<Algoritham/>}/>
        <Route path='/discrete' element={<Discreate/>}/>
+       <Route path='/4thSem' element={<FourthSem/>}/>
+       <Route path='/se' element={<Se/>}/>
+
+       
       </Routes>
       <Footer/>
     </>
