@@ -23,6 +23,8 @@ import Algoritham from './Pages/Study/Algoritham';
 import Discreate from './Pages/Study/Discrete';
 import FourthSem from './Pages/Study/B.tech_4thSem/FourthSem';
 import Se from './Pages/Study/B.tech_4thSem/Se';
+import Computer from './Pages/Study/Compter.jsx';
+
 function App() {
   return (
     <>
@@ -48,6 +50,7 @@ function App() {
        <Route path='/discrete' element={<Discreate/>}/>
        <Route path='/4thSem' element={<FourthSem/>}/>
        <Route path='/se' element={<Se/>}/>
+       <Route path='/computer' element={<Computer/>}/>
 
        
       </Routes>

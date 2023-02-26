@@ -106,6 +106,13 @@ let StudyData = [
 
     {
         img: discrete,
+        tittle: 'Computer Network',
+        desc: 'A group of computer which is conected to each other for the purpose of data sharing is called computer network.',
+        visit: '/computer'
+    },
+    
+    {
+        img: discrete,
         tittle: 'Discrete Structure',
         desc: 'Discrete methematic is the part of methematic in which we study about discrete object. ',
         visit: '/discrete'
