@@ -9,6 +9,7 @@ import tree from './Img/tree2.jpg'
 import js from './Img/js.jpg'
 import heap from './Img/heap3.png'
 import discrete from './Img/discrete.jfif'
+import cn from './Img/cn.jfif'
 
 
 
@@ -105,7 +106,7 @@ let StudyData = [
     },
 
     {
-        img: discrete,
+        img: cn,
         tittle: 'Computer Network',
         desc: 'A group of computer which is conected to each other for the purpose of data sharing is called computer network.',
         visit: '/computer'
