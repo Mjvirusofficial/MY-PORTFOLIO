@@ -10,6 +10,7 @@ import js from './Img/js.jpg'
 import heap from './Img/heap3.png'
 import discrete from './Img/discrete.jfif'
 import cn from './Img/cn.jfif'
+import react from './Img/React.jfif'
 
 
 
@@ -32,6 +33,13 @@ let StudyData = [
         desc: 'Some topics from all subject which is available in 4th semester.',
         visit: '/4thSem'
     },
+
+    {
+        img: react,
+        tittle: 'React JS',
+        desc:'React is a free and open-source front-end JavaScript library which is used for building user interfaces.',
+        visit: '/react'
+    }, 
 
     {
         img: Queue,
