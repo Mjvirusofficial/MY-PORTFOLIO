@@ -106,9 +106,37 @@ function ReactJS() {
                     <p><b className="main">UseRef:-</b> UseRef hook is simply a Ref feture which is available in class component so, insted of using ref we use UseRef in functional component.</p>
                     <p>UseRef is used in DOM manipulations, means if we have to access the data from input or render something when we clicked on button without using state in then we can use UseRef. <a className="nav-link active " aria-current="page" href='https://github.com/Mjvirusofficial/Relevel-by-unacadamy/blob/master/MODULE%202/React/JeevendraSir/src/Hooks/UseRef/UseRef.jsx'><h2 className='learn'>See code</h2></a></p>
 
+                    <p><b className="main">UseParams:-</b> Use parama is used to take data or information as a parameter and it is capable to pass  those data in another component.</p>
+                    <p>When we have to fetch someone data and rendered into another pages then we use useParam.</p>
+
+                    <p><b className="main">Search param Hooks:-</b>  Search param Hooks comes from react router dom which is used to search something which you are adding on your url.</p>
+                    <p>Using state & state.get(). <a className="nav-link active " aria-current="page" href='https://www.youtube.com/watch?v=8M7d8T8ee3M'><h2 className='learn'>See code</h2></a></p>
+                    <p><b className='main'>For example:-</b></p>
+                    <p>const [search,SetSearch] = useSearchParam()</p>
+                    <p>console.log(search.get(name))</p>
+                    <p></p>
+                    <p><b className="main">Use navigate:-</b> it is also come from react-router-dom which is used to navigate conditionally.</p>
+                    <p>For example when you complete your signup you redirected into login page or Home page Because here programer have useNavigate or something.</p>
+                    <p><b className="main">Use location:-</b> This is also coming from react router dom which is used to find some properties like  hash, key, pathNames,  Search, state when we navigate one page to another. <a className="nav-link active " aria-current="page" href='https://www.youtube.com/watch?v=GlP2yASKjLM'><h2 className='learn'>See code</h2></a></p>
+                    <hr />
                 </div>
             </div>
 
+            <div className="container">
+                <div className="heading"><u><h1>Control & Uncontrol Component</h1></u></div>
+            </div>
+
+            <div className="container-fluid">
+                <div className="row detail">
+                   <p><b className="main">Control Component:-</b> Controlled Components are those in which input data or other things is handled by the help of states.</p>
+                   <p>In functional components it will use UseState that takes its current value through props or without props and makes changes through callbacks like onClick, onChange, etc.</p>
+
+                   <p><b className="main">Unontrol Component:-</b> Uncntrolled Components are those in which input data or other things is does not handled by the help of states.</p>
+                   <p>Uncontrol component directly communicate with DOM, means Document Object Model.</p>
+                   <p>Using useRef hook in functional component. <a className="nav-link active " aria-current="page" href='https://www.youtube.com/watch?v=ajGbN7zpGQY&t=5s'><h2 className='learn'>See code</h2></a></p>
+
+                </div>
+            </div>
 
 
 
@@ -117,3 +145,5 @@ function ReactJS() {
 }
 
 export default ReactJS
+
+

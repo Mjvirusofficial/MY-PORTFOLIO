@@ -1,5 +1,7 @@
 import React from 'react'
 import './Project.css'
+import ProjectData from '../Component/Project/ProjectData';
+import Structure from '../Component/Project/Structure/Structure';
 function Project() {
   return (
     <div>
@@ -9,6 +11,43 @@ function Project() {
         </div>
       </div>
 
+{/* latest code */}
+
+ {
+      ProjectData.map(i =>{
+        return <Structure
+          title = {i.title}
+          description = {i.description}
+          description2 = {i.description2}
+          button = {i.button}
+          youtube = {i.youtube}
+        />
+      })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {/* Old code */}
+
+{/* 
       <div className="container-fluid">
         <div className="row">
           <div className="col">
@@ -36,9 +75,15 @@ function Project() {
 '>See the code</a></button>
           </div>
         </div>
-      </div>
+      </div> */}
+
+
+
     </div>
   )
 }
 
 export default Project;
+
+
+
