@@ -15,13 +15,21 @@ let ProjectData = [
         youtube : "https://www.youtube.com/embed/QrxByCSO7WQ"
     },
     {
-        title :'2.E-commerce site',
+        title :'2.E-commerce site❤️',
         description :'This is my 2nd project i have created this site to know that how things work in e-commerce site.',
         // description2 : 'This site is fully responsive but not completed at this time😅 but you can see my progress.',
         button : 'https://mj-project-2.netlify.app/',
         youtube : "https://www.youtube.com/embed/C5WRVTMB0Kc"
     },
+
+    {
+        title :'3.Weather Application❤️',
+        description :'This is my first interview cracking project || Asked by The Matrix Lab',
+        // description2 : 'This site is fully responsive but not completed at this time😅 but you can see my progress.',
+        button : 'https://the-matrix-lab-task.netlify.app/',
+        youtube : "https://www.youtube.com/embed/4hrJNVUaXug"
+    },
+
 ]
 
-// https://www.youtube.com/embed/rJCx5c8z43w
 export default ProjectData;
