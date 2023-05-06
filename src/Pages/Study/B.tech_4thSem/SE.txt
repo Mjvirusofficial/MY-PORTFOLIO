@@ -1,0 +1,442 @@
+Start B.tech 2nd year means 4th sem || Date:- 24/02/2023 Fri 06:20
+______________________________________
+
+1. Software Engineering
+Unit1:- Software products and software process.
+
+Topic which we have to covered in Unit 1 is:-
+
+1.Software products:- The final software that is delivered to the customer is called the software products.
+
+It is the outcome of the entire software development process.
+
+It may include source code, data, user guide, reference manuals, installation manuls, speiicifications documentation and other documentation etc.
+
+The software products does not have any information regarding the software process. 
+
+Like:- How it works schedule, how many people worked on in , How the work was devided etc.
+
+It only consists of the final application that full filled customers requirements.
+
+2.Software process:- The  Software process is the entire way in which we produce a software.
+
+It is the entire journey from the idea 💡 to the final release of it.
+
+It includes all the activities that are performed to form the final application or software.
+
+Like:- The requirements analysis, designing of the software, coding, testing, documentation, maintenance etc.
+
+Hence, the software process can also be defined as the collection of all the activities that the result lead to formation of the software product.
+
+The software product may not contain the details about software process but the software process have every detail about the final product from the idea to the final release of the of it.
+
+
+Software process is a set of activities and associated results that produce a software product.
+
+There activities are:- 
+1.Specification = requirements 
+2.Development = Where the Software Design and Program 
+
+3.Validation = Where the software is checked to ensure that what the customer results.
+
+4.Evolution = Modification changes according to customer.
+
+#######Software model#######
+1.Waterfall model / Linear sequence model:- It is a simple & basic model of software designing in this models software designing life cycle follow linearly so, that's why the name becomes linear sequential model.
+
+Here, All ways are mentioned in systematic way. 
+
+This model is not fexible that means one what is done in one phase. Then it will go in next phase only no value will go in back phases.
+
+These are ways:-
+1.Feasiblity study:- That means it should be financially or technically feasible.
+
+2.Requirement analysis specifications:- All requirements first analysis.
+
+3.Design:- Designing the UI & UX 
+
+4.Coding and testing:- Implement the UI & UX in programming way.
+
+5.System and integration:- Small unit ko integrate krna || Alpha testing || Beta testing.
+
+6.Maintainance:- The meaning of maintainanc phase is if any problem comes or any bug comes you have to fixed that each and every whatever problems is coming technical or non-technical you have to fixed all of them.
+
+Advantages and disadvantage of this models:- 
+
+########Advantages#########
+1.Base model for all model.
+2.Simple and easy model.
+3.For small projects.
+
+########Disdvantages########
+
+1.No feedback
+2.No experiment
+3.No parallelism:- 
+Parallelism means that at time multiple teams can work. So here no parallelism.
+
+3.High risk
+4.60% efforts in Maintainanc phase
+
+Waterfall model devided into two types:- 
+
+1.Classic waterfall model:-
+There is no feedback.
+
+2.Iterative waterfall model:- There is feedback. 
+
+But S.R.S document not change that means feasibility study that is used to gather the information about software product will not change.
+
+######Increment model#######
+It is used to create your software product in part wise that means supose you want to create a software for school
+
+Then your Functionality for the software is like attendence, fee, students login, teachers login, principle login.
+
+Then supose create software using this model software engineer first implement some part of your software then, Give you and repeat this step until your products complete completely.
+
+#######V shaped Model#######
+
+This is also known as Verification & validation model.
+
+It is a extension of waterfall model.
+
+Means in waterfall model one by one cycle we complete the SDLC
+
+Over here also it  is same we will complete all the steps one by one like this, But over here one more thing is extra that I will make a diagram and show.
+
+Over here first of all we have done requirement analysis after that we did Designing phase and after coming to the implementation and coding phase.
+
+We again go upwarda and overe here what is the meaning of going upward.
+
+Thay
+
+
+######Prototype Model#######
+
+In this model the review and update option is upgraded that means in this model:-
+
+A prototype of your software is designed first means you can think as a dummy model or you can say like the model of your software.
+
+1.Requirement analysis
+2.Quick Designing
+3.Build prototype
+  A.Customer Evaluation
+  B.Review and update / Refinement suggestion incorporating :- if customer want to any update that again go to the Build prototype phase.
+
+4.Coding & testing.
+5.Testing.
+6.Maintanance.
+
+
+########RAD Model#########
+
+RAD = Rapid Application Development.
+
+It is a high speed adaptation of waterfall model.
+
+It is a example of increament software process model.
+
+The RAD model is only designed to produce a good quality product in very short duration of time.
+
+Here, software product devided into team and after making some part then combining the all parts and make products.
+
+#########Advantages#########
+It required very less time to develop the product.
+
+Product may be produced before it's delivery.
+
+#########Disadvantages#########
+Large projects required sufficient or more human resource.
+
+It's also doesn't work in high technical risk.
+
+Phases of RAD:-
+1.Business model:- Gather information.
+
+2.Data modeling:- Show the flow of data using some techniques like DFD (data flow diagram).
+
+3.Process modeling:- Here process how data flow.
+
+4.Application modeling:- 
+
+5.Testing turnover:- Test product.
+
+######Evolutionary model######
+
+It is a combination of Iterative model and increment model
+
+Increament model first implementat a few basic features and deliver to customer. Then build the next part and deliver it again and repeat this step until the Desired system is fully released.
+
+No long-term plan are made.
+
+Iterative model main advantage is its feedback process in every phase.
+
+Also known as design a little, build a little, test a little, deploy a little model.
+
+__________________________________________
+#########Spiral Model###########
+A.Spiral model have risk handling features.
+
+B.If the radius of the spiral is increase then the cost of the product will also increase.
+
+C.Angular dimensions of the spiral represent the progress of the software product.
+
+D.This is a meta model that means this model is prepared from the advantage of different different models.
+
+Spiral model have four phases that makes a risk analysis software product:-
+
+1.Objective determination and identify alternative solution.
+
+2.Identify and resolve risks.
+
+3.Develop next version of product.
+
+4.Review and plan for next phase.
+
+#########Advantages#########
+1.Best for the risk handling.
+
+2.Best for the large projects.
+
+3.It's a flexible model.
+
+4.It's provided customer satisfaction.
+
+#########Disdvantages#########
+1.Very complex model.
+
+2.Too risk handling.
+
+3.More time to develop.
+
+4.It's very expensive as compared other models.
+
+#########Agile model###########
+The Agile model is an iterative and incremental approach for software development that emphasizes flexibility, customer collaboration, and continuous improvement. 
+
+It was created as a response to the limitations of traditional, linear software development methodologies such as the Waterfall model.
+
+The Agile model involves breaking down the software development process into small, manageable chunks called "sprints". Each sprint typically lasts two to four weeks and involves a cross-functional team of developers, designers, testers, and other stakeholders working collaboratively to deliver a working software increment.
+
+The Agile model has gained popularity in recent years due to its flexibility and ability to deliver working software quickly and efficiently. However, it is important to note that the Agile model may not be suitable for all projects, and choosing the right development methodology for a given project requires careful consideration of various factors such as project size, complexity, and team composition.
+
+Some models that come under Agile are:- 
+1.Scrum
+2.Crystal
+3.FDD
+4.XP etc.
+
+#########Advantages#########
+1.Frequently delivery.
+
+2.Face to face communication with clients.
+
+3.Frequently changes.
+
+4.Time constraints.
+
+#########Disdvantages#########
+1.Less documentation.
+
+2.Maintainance problem.
+
+
+##########Scrum model##########
+It is one of the software development model that comes under Agile technology.
+
+Agile methodologies is an iterative and increment approach to develop a software product.
+
+Scrum model is a lightweight iterative and incremental framework.
+
+Scrum breakdown the phases into stages and cycle called sprints.
+
+Sprint is a duration of time and one who are working in it.
+
+We took genral time of sprint from 2 week to 1 month, that means the minimum time duration of the sprint is 2 week and maximum is 1 month.
+
+There are some keywords in scrum:- 
+1.Backlog:- Backlog is 
+The idea of the scrum is taken from the rugby 🏉 game. Like in rugby one formation is created in such a way the opponent, the team by doing their head down in such a way they are in position so, that we can take the ball like this,
+
+One way the developer, the developer are in  such a formation by doing their head down means kind of idea that we are took from here, they are going to solve a complex formation.
+
+They are going create a big project, by one type this idea has been taken.
+
+
+_________________________________________
+
+######Software Requirements#######
+
+Software requirement is the discription about the features and functionalities of software product.
+
+It is the complete discription of what the system should do.
+
+It is also known as R.E that means Requirements engineering.
+
+There are four steps of process in Requirement engineering which includes:- 
+1.Feasibility Study
+
+2.Requirements Gathering / Elicitation.
+
+3.Software Requirement specifications (SRS)
+
+4.Software Requirement Validation (SRV)
+
+#####Tools support for R.E#####
+1.Oversation support / User Oversation.
+2.Use cases
+3.User stories
+4.Requirement workshop 
+5.Mind maping
+6.Role playing
+7.Prototype
+
+
+##########SRS Structure#########
+1.Introduction:-
+Purpose.
+Intended Audience.
+Scope.
+Definition.
+Refference.
+
+2.Overall description:-
+User interfaces.
+System interfaces.
+Constraints assumption and dependencies.
+User characteristics.
+
+3.System features and requirements:-
+Functional requirements.
+
+Use cases.
+
+External interface requirement. Like for payment you use paypal or rozaro pay etc.
+
+Logical database requirement.
+
+Non-Functional Requirements:- safety, security, availability, Realiblity etc.
+
+Then, Delivered for approval.
+
+#######User requirements#########
+1.Easy to use / simple to operate.
+2.Quick response.
+3.Effectively handling operational error.
+4.Customer support.
+
+
+######Functional and Non-functional Requirements#################
+
+Requirements which are releted to functional working aspect of the software.
+
+Functional requirements tell us that how the system or software product will work that means it's working and operations all comes under the functional requirements.
+
+
+In Non-Functional Requirements are expected characteristics  of target product or particular software.(Security, storage, configuration performance, feasibility etc)
+
+A Non-Functional Requirements is What are the expected characteristics that means others than that working 
+
+
+In other words in Non-Functional Requirements mainly come security that means weather you create a app or website you need to put a security check on it.
+
+It should not happen that you launch the system and next day someone hacked you system. 
+
+So, security checked is very important in Non-Functional Requirements.
+
+__________________________________________
+
+#############DFD#############
+DFD stand for data flow diagram. It is a graphical representation of data that moved in backend.
+
+We can understand the Data Flow Diagram in some few step:- 
+
+Step1:-
+When you register in any software then you fill your data like username, email, password 🔑 etc. 
+
+Step2:- After completion of your registration you will be redirected on some other pages like login or landing pages.
+
+Supose you redirected on login page then what happened so, after redirected on login page you can authenticate yourself by entering your data which you are added in registration page.
+
+Step3:- 
+When you completed your login then you will be redirected on landing / homepage page.
+
+So, what happened during the completion of your registration, login and entering in homepage.
+
+There only your data moved in different different pages but you didn't able to see that because data travel / moved in backed.
+
+So, because of this reason this is called DFD that means Data Flow Diagram.
+
+Data flow diagram is useful for communicating with user, manager and other personnel.
+
+It is also known as bubble chart.
+
+##########DFD elements#########
+1.Source sinks (user / external entities):-
+A rectangle represents an external entities.
+
+They either supply or received  data.
+
+They do not process data.
+
+Source:- Entity that supply the data to the system.
+
+Sink:- Entity that received the data to the system.
+
+2.Data flow
+3.Process / work 
+4.Data stored
+
+#########Rules of Data flow########
+1.Data can flow from:- 
+External entity to process
+Process to external entity
+Process to store and back
+Process to process
+
+2.Data can not flow from:-
+External entity to external entity
+External entity to store
+Store to external entity
+Store to store
+
+__________________________________________
+
+#####Software Design Approach#####
+
+It's approach which design software product.
+
+Two approaches for designing software:-
+1.Function oriented design:-
+
+System is designed from a functional viewport.
+
+Top Down composition.
+
+Divided and conquer approach
+
+DFD used
+
+2.Object oriented disign:-
+
+System is viewed as a collection of objects (i.e entities)
+
+Bootom up approach
+
+UML is used
+
+#############SPM#############
+SPM stand for Software Project Management, it is an art and science 🔭 of planing and leading the software project.
+
+That, means in software project management we talk about how to plan the entire project, and then excute.
+
+It is complete planning that how to develop the software product, like In the journey to develop product how many people will work together, when we will deliver the product, how we will face 👀 the risk, what is complete cost to develop the product everything related to the software product is managed by software product manager.
+
+The Software Project Manager is the administrative leader of the team.
+
+The main goal of SPM is work with professional so, that software product develop effectively and efficiently.
+
+Various factor make this job very complex for e.g:- changeability, complexity, uniqueness, possibility of multiple solution etc.
+
+Changeability:- Make changes latest version.
+
