@@ -1,0 +1,144 @@
+
+DBMS Concepts and architecture Introduction
+
+######Concept of DBMS#######
+
+(a).Data
+(b).Database
+(c).Database management system
+
+1.Data:- Data is nothing but you can say everything in digital form is know as data.
+
+Data can anything it can be a number, a symbol, alphabet, audio, video etc etc everything is known as Data.
+
+2.Database:- In simple term you can understand database as place where the collection of data are placed.
+
+That means Database is a type of place where we strored the set or collection of related data.
+
+3.DBMS:- Database management system. It is a software tool or manage system that is used to manage the data.
+
+#######How we can manage the Database##################
+
+• We can see all user details.
+
+• Pick particular user information
+
+•We can update the user like:- his name, his salary, his current location etc whatever we want we can change.
+
+• Next is we can delete user
+
+• We can add new users
+
+• Filter user name wise, salary wise.
+
+
+DBMS first stand for Data Base Management System.
+
+it is software tool that is used to manage the Database.
+
+Basically it's provide an interface to perform some operations like:- 
+
+1.Creating and organising database.
+
+2.Updating some particular information.
+
+3.Finding some information from the database.
+
+4. Delete particular information etc.
+
+
+
+#######Best Example########
+
+Imagine you have a collection of books at home, and you want to keep them organized so that you can easily find any book whenever you need it. 
+
+Instead of scattering the books randomly, you decide to create a bookshelf and arrange the books in a systematic manner. 
+
+The bookshelf acts as your "Database," and the way you organize the books on the bookshelf represents the "Data Model."
+
+Now, you need a way to manage your bookshelf effectively, like adding new books, removing old ones, or finding a specific book quickly. Here's where the "Database Management System" comes into play. The DBMS is like a helpful librarian who maintains the bookshelf for you and allows you to perform various tasks:
+
+1. **Adding Books**: When you buy a new book, you hand it over to the librarian (DBMS), and they place it in the appropriate spot on the bookshelf, making sure it's organized.
+
+2. **Finding Books**: If you want to find a specific book, you tell the librarian its title (a query), and the librarian goes straight to that book on the bookshelf, so you can pick it up easily.
+
+3. **Updating Information**: Let's say you want to change the title of a book because you found a better one. You inform the librarian, and they update the title on the bookshelf accordingly.
+
+4. **Removing Books**: When a book becomes too old or you no longer need it, you ask the librarian to remove it from the bookshelf, and they do it for you.
+
+5. **Keeping things organized**: The librarian ensures that all the books are properly arranged and that there are no duplicates on the bookshelf.
+
+In this analogy:
+- The books are like data entries in a database.
+- The bookshelf represents the database where data is stored.
+- The librarian symbolizes the DBMS that manages and handles data operations.
+
+So, a Database Management System (DBMS) is like your personal librarian, taking care of your data, making it easy to access, and ensuring everything stays organized.
+
+In other words DBMS first stand for Data Base Management System it is Software tool that is used to manage the Database.
+
+Basically it's provide an interface to perform some operations like:- 
+
+1.Creating and organising database.
+
+2.Updating some particular information.
+
+3.Finding some information from the database.
+
+4. Delete particular information etc.
+
+
+#####Archietecture of DBMS####
+
+Let's explain the architecture of a Database Management System (DBMS) in simple terms with a relatable example.
+
+The Architecture of DBMS is divided into four part:-
+
+1.User Interface:- This is the part of the DBMS that help you to interact with database.
+
+It's like the front door to the database.
+
+You can use it to ask questions (queries) or tell the database what to do.
+
+Just like you use a search bar on a website to find information, you use the user interface of a DBMS to find and manage data.
+
+2.Query Processor:- When you ask a question (query) through the user interface, the query processor listens and understands what you want.
+
+It figures out the best way to get the answer from the database efficiently.
+
+It's like a helpful assistant who makes sure your question is clear and finds the right place to get the information.
+
+3.Database Engine:- Once the query processor knows what you want, it talks to the database engine.
+
+The database engine is like the brain of the DBMS. It knows where all the data is stored and how to get it.
+
+It follows the instructions from the query processor and goes to the right place in the database to find the information which you asked.
+
+4.Data Storage:- This is place where the actual data are placed. It's like a big organized storage room with lots of data. 
+
+In a DBMS, data is organized into tables, just like how you might organize data in a spreadsheet. 
+
+Each table contains specific information about data Like:- 
+
+Supose you have user list then Name of user, Email of user, Website, address etc everything release user.
+
+
+
+Let's see a example of "Library Database management system".
+
+Imagine you're managing a library, and you want to use a DBMS to organize your books and library members.
+
+1.User Interface:- You use a computer program with buttons and search boxes to interact with the library database.
+
+This is the user interface where you can search for books, add new books, or check which members borrowed a book.
+
+2.Query Processor:- When you type a book title in the search box the query processor understands your request and decides how best to find the book you're looking for.
+
+
+3.Database Engine:- The database engine knows exactly where the "books" are placed means in which row data are placed which you looking for. 
+
+4.Data Storage:- In the data storage room, there's a specific shelf (table) for books. Each row on the shelf contains information about a particular book, like the title, author, and availability status.
+
+By using a DBMS for the library, you can easily find information about books, manage library member data, and keep track of borrowed books. 
+
+The DBMS architecture makes it organized and efficient to handle a large amount of data and helps you get the information you need quickly.

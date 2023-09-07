@@ -29,6 +29,13 @@ let StudyData = [
 
     {
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_OIUet1dRnEI3NPUYZXhOqmhh7d4_jM2J5Q&usqp=CAU',
+        tittle: 'B.tech 2nd year 5th sem',
+        desc: 'Some topics from all subject which is available in 5th semester.',
+        visit: '/5thSem'
+    }, 
+    
+    {
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_OIUet1dRnEI3NPUYZXhOqmhh7d4_jM2J5Q&usqp=CAU',
         tittle: 'B.tech 2nd year 4th sem',
         desc: 'Some topics from all subject which is available in 4th semester.',
         visit: '/4thSem'
@@ -126,6 +133,8 @@ let StudyData = [
         desc: 'Discrete methematic is the part of methematic in which we study about discrete object. ',
         visit: '/discrete'
     },
+
+    
 ]
 
 export default StudyData;

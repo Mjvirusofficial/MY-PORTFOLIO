@@ -30,6 +30,14 @@ let ProjectData = [
         youtube : "https://www.youtube.com/embed/4hrJNVUaXug"
     },
 
+    {
+        title :'4.Figma Design',
+        description :'This is my first Next JS || Asked by Yogesh Sir',
+        // description2 : 'This site is fully responsive but not completed at this time😅 but you can see my progress.',
+        button : 'https://figma-homepage.netlify.app/',
+        youtube : "https://www.youtube.com/embed/6WMAtyMMP6c?si=xe_B4DIc3ielC0yc"
+    },
+
 ]
 
 export default ProjectData;

@@ -25,6 +25,8 @@ import FourthSem from './Pages/Study/B.tech_4thSem/FourthSem';
 import Se from './Pages/Study/B.tech_4thSem/Se';
 import Computer from './Pages/Study/Compter.jsx';
 import ReactJS from './Pages/Study/ReactJS';
+import FifthSem from './Pages/Study/B.tech_5thSem/FifthSem';
+import DBMS from './Pages/Study/B.tech_5thSem/DBMS';
 
 function App() {
   return (
@@ -51,11 +53,11 @@ function App() {
        <Route path='/discrete' element={<Discreate/>}/>
        <Route path='/4thSem' element={<FourthSem/>}/>
        <Route path='/se' element={<Se/>}/>
+       <Route path='/5thSem' element={<FifthSem/>}/>
+       <Route path='/dbms' element={<DBMS/>}/>
        <Route path='/computer' element={<Computer/>}/>
        <Route path='/react' element={<ReactJS/>}/>
 
-
-       
       </Routes>
       <Footer/>
     </>
