@@ -11,22 +11,20 @@ function Project() {
         </div>
       </div>
 
-{/* latest code */}
+      {/* latest code */}
 
- {
-      ProjectData.map(i =>{
-        return <Structure
-          title = {i.title}
-          description = {i.description}
-          description2 = {i.description2}
-          button = {i.button}
-          youtube = {i.youtube}
-        />
-      })
-    }
-
-
-
+      {
+        ProjectData.map(i => {
+          return <Structure
+            title={i.title}
+            description={i.description}
+            description2={i.description2}
+            button={i.button}
+            youtube={i.youtube}
+            github={i.github}
+          />
+        })
+      }
 
 
 
@@ -45,9 +43,12 @@ function Project() {
 
 
 
- {/* Old code */}
 
-{/* 
+
+
+      {/* Old code */}
+
+      {/* 
       <div className="container-fluid">
         <div className="row">
           <div className="col">

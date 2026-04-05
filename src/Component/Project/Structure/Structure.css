@@ -1,39 +1,88 @@
-.heading{
+.project-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.heading {
     text-align: center;
     margin-bottom: 35px;
     font-family: 'Ubuntu', sans-serif;
-
+    font-weight: 700;
+    color: #2c3e50;
 }
-.video{
-    /* width: 335px; */
-    height: 300px;
+
+.video {
+    height: 320px;
     border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.title{
+.video:hover {
+    transform: scale(1.02);
+}
+
+.title {
     font-family: 'Ubuntu', sans-serif;
-
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 10px;
 }
 
-.description{
+.title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 3px;
+}
+
+.description {
     font-family: 'Ubuntu', sans-serif;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
 }
 
-.homebtn a{
-    text-decoration: none;
-    color: black;
+.homebtn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
 }
 
-.homebtn a:hover{
+.homebtn a {
     text-decoration: none;
     color: white;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
 }
 
-/* .p{
-    letter-spacing: 1px;
-    padding: 10px 30px;
-    border-radius: 50px;
-    transition: 0.5s;
-    border: 2px solid rgb(126, 126, 223);
-} */
+.homebtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
 
+.homebtn a:hover {
+    color: white;
+}
