@@ -5,10 +5,17 @@ function Structure(mj) {
     <div className="project-card">
       <div className="container-fluid mt-4">
         <div className="row align-items-center">
-          <div className="col-12 col-lg-6 mb-4 mb-lg-0">
-            <iframe className='project-video w-100' src={mj.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div className="col-12 col-lg-6 px-lg-4">
+          {mj.youtube && mj.youtube !== 'coming_soon' && (
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0">
+              <iframe className='project-video w-100' src={mj.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          )}
+          {mj.youtube === 'coming_soon' && (
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center" style={{ height: '320px', background: '#f8f9fa', borderRadius: '12px', border: '2px dashed #dee2e6' }}>
+              <h4 className="text-muted"><i className="fa-solid fa-hourglass-half me-2"></i>Video Coming Soon</h4>
+            </div>
+          )}
+          <div className={mj.youtube ? "col-12 col-lg-6 px-lg-4" : "col-12 px-lg-4"}>
             <h3 className='project-title'><b>{mj.title}</b></h3>
             <h4 className='project-description'>{mj.description}</h4>
             <h4 className='project-description'>{mj.description2}</h4>

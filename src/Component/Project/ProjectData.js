@@ -9,6 +9,15 @@ let ProjectData = [
     },
 
     {
+        title: 'Video Editing Portfolio',
+        description: 'This is my site for Video Editing jobs and showcasing skills.',
+        description2: 'Dedicated professional Video Editing Portfolio layout.',
+        button: 'https://oyeitsdeepak.netlify.app/',
+        youtube: '',
+        github: '#'
+    },
+
+    {
         title: 'Top 6 South lovestories movies❤️',
         description: 'This is my normal project using React, when i have started to work with API.',
         description2: 'This site is also fully responsive.',
@@ -44,12 +53,21 @@ let ProjectData = [
     },
 
     {
-        title: 'Dhisaab',
+        title: 'D-Hisaab',
         description: 'Manage your daily expenses effectively.',
         description2: 'A fully functional project linked with custom UI.',
         button: 'https://dhisaab.netlify.app/',
         youtube: 'https://www.instagram.com/reel/DUw-sPpEb2p/embed/',
         github: 'https://github.com/Mjvirusofficial/Hissab-App'
+    },
+
+    {
+        title: 'D-BirthAi',
+        description: 'Automated birthday wishing project built with modern technologies.',
+        description2: 'Full automated workflow. Video demonstration coming soon.',
+        button: 'https://dbirthai.netlify.app/',
+        youtube: 'coming_soon',
+        github: 'https://github.com/Mjvirusofficial/D-BirthAI'
     }
 
 ]
