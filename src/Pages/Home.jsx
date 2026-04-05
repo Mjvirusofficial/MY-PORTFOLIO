@@ -36,7 +36,7 @@ function Home() {
               </div>
             </div>
 
-            <h2 className='mt-5 status'>Machority when you realised winner winner chicken dinner is not a real success.</h2>
+            <h2 className='mt-5 status'>Maturity when you realised winner winner chicken dinner is not a real success.</h2>
             {/* <img src={img2} className="image img-fluid" alt="" /> */}
             <div className='mt-3'>
               <NavLink to='/about' className='homebtn sm-text-center'>More About me</NavLink>

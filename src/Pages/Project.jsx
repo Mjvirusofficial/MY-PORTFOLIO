@@ -6,7 +6,7 @@ function Project() {
   return (
     <div>
       <div className="container">
-        <div className="heading ">
+        <div className="project-heading mt-4">
           <h1 className=''>Here, you can see my <i class="fa-brands fa-react"></i> projects</h1>
         </div>
       </div>
@@ -14,8 +14,9 @@ function Project() {
       {/* latest code */}
 
       {
-        ProjectData.map(i => {
+        [ProjectData[0], ...[...ProjectData.slice(1)].reverse()].map((i, index) => {
           return <Structure
+            key={index}
             title={i.title}
             description={i.description}
             description2={i.description2}

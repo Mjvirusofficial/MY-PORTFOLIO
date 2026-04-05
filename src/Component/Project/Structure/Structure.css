@@ -13,7 +13,7 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
-.heading {
+.project-heading {
     text-align: center;
     margin-bottom: 35px;
     font-family: 'Ubuntu', sans-serif;
@@ -21,18 +21,18 @@
     color: #2c3e50;
 }
 
-.video {
+.project-video {
     height: 320px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-.video:hover {
+.project-video:hover {
     transform: scale(1.02);
 }
 
-.title {
+.project-title {
     font-family: 'Ubuntu', sans-serif;
     color: #333;
     margin-bottom: 15px;
@@ -41,7 +41,7 @@
     padding-bottom: 10px;
 }
 
-.title::after {
+.project-title::after {
     content: '';
     position: absolute;
     left: 0;
@@ -52,7 +52,7 @@
     border-radius: 3px;
 }
 
-.description {
+.project-description {
     font-family: 'Ubuntu', sans-serif;
     color: #555;
     font-size: 1.1rem;
@@ -60,29 +60,12 @@
     margin-bottom: 12px;
 }
 
-.homebtn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border: none;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
-}
-
 .homebtn a {
     text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
-}
-
-.homebtn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    color: black;
 }
 
 .homebtn a:hover {
+    text-decoration: none;
     color: white;
 }
