@@ -1,50 +1,60 @@
-import React from 'react'
-import './Navbar';
+import React from 'react';
+import './Footer.css';
+import { 
+    FaFacebookSquare, 
+    FaTwitter, 
+    FaYoutube, 
+    FaInstagram, 
+    FaLinkedinIn, 
+    FaGithub, 
+    FaArrowUp
+} from 'react-icons/fa';
+
 function Footer() {
-  return (
-    <div><br /><br />
-    <footer class="bg-dark text-center text-white">
-    {/* <!-- Grid container --> */}
-    <div class="container p-4 pb-0">
-      {/* <!-- Section: Social media --> */}
-      <section class="mb-4">
-        {/* <!-- Facebook --> */}
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100039237225286" role="button"
-          ><i class="fa-brands fa-square-facebook"></i></a>
-  
-        {/* <!-- Twitter --> */}
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/MjVirus3" role="button"
-          ><i class="fab fa-twitter"></i></a>
-  
-        {/* <!-- Youtube --> */}
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/@mjvirus" role="button"
-          ><i class="fa-brands fa-youtube"></i></a>
-  
-        {/* <!-- Instagram --> */}
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/0ye_its_deepak/?hl=en" role="button"
-          ><i class="fab fa-instagram"></i></a>
-  
-        {/* <!-- Linkedin --> */}
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/deepak-ravidas-65956a388/?skipRedirect=true" role="button"
-          ><i class="fab fa-linkedin-in"></i></a>
-  
-        {/* <!-- Github --> */}
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Mjvirusofficial" role="button"
-          ><i class="fab fa-github"></i></a>
-      </section>
-      {/* <!-- Section: Social media --> */}
-    </div>
-    {/* <!-- Grid container --> */}
-  
-    {/* <!-- Copyright --> */}
-    <div class="text p-3" >
-      © 2022 Copyright:
-      <a href='/' className='text'> Mjvirusofficial.com</a>
-    </div>
-    {/* <!-- Copyright --> */}
-  </footer>
-    </div>
-  )
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    return (
+        <footer className="minimal-premium-footer">
+            <div className="container text-center">
+                {/* Back to Top Section */}
+                <div className="footer-top-btn-wrapper mb-5">
+                    <button onClick={scrollToTop} className="premium-scroll-top">
+                        <FaArrowUp />
+                        <span className="tooltip-text">Jump to Top</span>
+                    </button>
+                </div>
+
+                {/* Social Icons Row */}
+                <div className="footer-icons-row mb-4">
+                    <a href="https://www.facebook.com/profile.php?id=100039237225286" target="_blank" rel="noreferrer" className="social-icon-link">
+                        <FaFacebookSquare />
+                    </a>
+                    <a href="https://twitter.com/MjVirus3" target="_blank" rel="noreferrer" className="social-icon-link">
+                        <FaTwitter />
+                    </a>
+                    <a href="https://www.youtube.com/@mjvirus" target="_blank" rel="noreferrer" className="social-icon-link">
+                        <FaYoutube />
+                    </a>
+                    <a href="https://www.instagram.com/0ye_its_deepak/?hl=en" target="_blank" rel="noreferrer" className="social-icon-link">
+                        <FaInstagram />
+                    </a>
+                    <a href="https://www.linkedin.com/in/deepak-ravidas-65956a388/" target="_blank" rel="noreferrer" className="social-icon-link">
+                        <FaLinkedinIn />
+                    </a>
+                    <a href="https://github.com/Mjvirusofficial" target="_blank" rel="noreferrer" className="social-icon-link">
+                        <FaGithub />
+                    </a>
+                </div>
+
+                {/* Copyright Line */}
+                <div className="footer-copyright-minimal">
+                    <p>© {new Date().getFullYear()} Mjvirus<span>official</span>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    );
 }
 
-export default Footer
+export default Footer;

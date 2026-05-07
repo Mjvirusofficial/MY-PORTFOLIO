@@ -1,21 +1,36 @@
-import React from 'react'
-import './Project.css'
+import React from 'react';
+import './Project.css';
 import ProjectData from '../Component/Project/ProjectData';
 import Structure from '../Component/Project/Structure/Structure';
+import { FaRocket, FaCodeBranch } from 'react-icons/fa';
+
 function Project() {
+  // Reversing data to show latest projects first, but keeping specific order
+  const projectsToDisplay = [ProjectData[0], ...[...ProjectData.slice(1)].reverse()];
+
   return (
-    <div>
-      <div className="container">
-        <div className="project-heading mt-4">
-          <h1 className=''>Here, you can see my <i class="fa-brands fa-react"></i> projects</h1>
+    <div className="project-page-root">
+      {/* Premium Header Section */}
+      <section className="project-hero-section text-center py-5 mb-5">
+        <div className="container">
+          <div className="label-badge mb-3">
+             <FaCodeBranch className="me-2" /> MY CREATIONS
+          </div>
+          <h1 className='display-3 fw-bold mb-3'>
+            Featured <span className='text-indigo'>Projects</span>
+          </h1>
+          <p className="lead mx-auto project-subtitle">
+            Exploring the intersection of code, design, and user experience through 
+            practical engineering and creative problem-solving.
+          </p>
+          <div className="header-accent-line mx-auto"></div>
         </div>
-      </div>
+      </section>
 
-      {/* latest code */}
-
-      {
-        [ProjectData[0], ...[...ProjectData.slice(1)].reverse()].map((i, index) => {
-          return <Structure
+      {/* Project Grid */}
+      <div className="projects-container pb-5">
+        {projectsToDisplay.map((i, index) => (
+          <Structure
             key={index}
             title={i.title}
             description={i.description}
@@ -24,68 +39,10 @@ function Project() {
             youtube={i.youtube}
             github={i.github}
           />
-        })
-      }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* Old code */}
-
-      {/* 
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col">
-            <iframe className='video col-12 col-lg-12 '  src="https://www.youtube.com/embed/QrxByCSO7WQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div className="col-12 col-lg-8 ">
-            <h3 className='title'><b>1.Top 6 South lovestories movies❤️</b></h3>
-            <h4 className='description'>This is my first project using React, also i have use Bootstrap 5 @wesome feeling when i was coding🧑‍💻</h4>
-            <h4 className='description'>This site less responsive for desktop site but looks @wesome in mobile site.</h4>
-            <button className='homebtn'><a href='https://mj-lovestory-movie.netlify.app/
-'>Visit this site</a></button>
-          </div>
-        </div>
+        ))}
       </div>
-
-      <div className="container-fluid mt-5">
-        <div className="row">
-          <div className="col">
-<iframe className='video col-12 col-lg-12 ' src="https://www.youtube.com/embed/dPp6fzwEccU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          </div>
-          <div className="col-12 col-lg-8 ">
-            <h3 className='title'><b>2.E-commerce site</b></h3>
-            <h4 className='description'>This is an e-commerce site i have created this site to know how things work in e-commerces site.</h4>
-            <h4 className='description'>This site is fully responsive but not completed at this time😅 but you can see my progress.</h4>
-            <button className='homebtn'><a href='https://github.com/Mjvirusofficial/E-commerce-site
-'>See the code</a></button>
-          </div>
-        </div>
-      </div> */}
-
-
-
     </div>
-  )
+  );
 }
 
 export default Project;
-
-
-

@@ -20,7 +20,7 @@ const About = () => {
     ];
 
     return (
-        <div className="about-final-ultra container mt-5 pb-5">
+        <div id="about-me-section" className="about-final-ultra container mt-5 pb-5">
             {/* Header */}
             <div className="text-center mb-5 position-relative">
                 <div className="bg-text-ultra">ABOUT ME</div>

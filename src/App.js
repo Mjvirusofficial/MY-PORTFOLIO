@@ -28,10 +28,12 @@ import ReactJS from './Pages/Study/ReactJS';
 import FifthSem from './Pages/Study/B.tech_5thSem/FifthSem';
 import DBMS from './Pages/Study/B.tech_5thSem/DBMS';
 import GalleryPage from './Pages/GalleryPage';
+import Preloader from './Component/Preloader/Preloader';
 
 function App() {
   return (
     <>
+      <Preloader />
       <Navbar/>
       <Routes>
        <Route path='/' element={<Home/>}/>
@@ -39,8 +41,7 @@ function App() {
        <Route path='/contact' element={<Contact/>}/>
        <Route path='/project' element={<Project/>}/>
        <Route path='/gallery' element={<GalleryPage/>}/>
-       <Route path='/study' element={<Study/>}/>
-
+       {/* <Route path='/study' element={<Study/>}/>
        <Route path='/DSA' element={<DSA/>}/>
        <Route path='/c' element={<C/>}/>
        <Route path='/queue' element={<Queue/>}/>
@@ -59,7 +60,7 @@ function App() {
        <Route path='/5thSem' element={<FifthSem/>}/>
        <Route path='/dbms' element={<DBMS/>}/>
        <Route path='/computer' element={<Computer/>}/>
-       <Route path='/react' element={<ReactJS/>}/>
+       <Route path='/react' element={<ReactJS/>}/> */}
 
       </Routes>
       <Footer/>

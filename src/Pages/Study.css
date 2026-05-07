@@ -1,6 +1,104 @@
-.topic{
-    border: 2px solid rgb(126, 126, 223);
-    font-family: 'Ubuntu', sans-serif;
-    border-radius: 6px;
-    padding-left: 4px;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+.study-page-root {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #ffffff;
+}
+
+.study-hero-section {
+    padding-top: 80px !important;
+}
+
+.study-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 18px;
+    background: rgba(79, 70, 229, 0.05);
+    color: #4f46e5;
+    font-size: 0.75rem;
+    font-weight: 800;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+.study-subtitle {
+    max-width: 700px;
+    color: #64748b;
+    font-size: 1.15rem;
+}
+
+.study-header-line {
+    width: 60px;
+    height: 4px;
+    background: #4f46e5;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.study-quote-card {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    border-radius: 40px;
+    border: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.quote-icon {
+    font-size: 2.5rem;
+    color: #4f46e5;
+    opacity: 0.3;
+}
+
+.text-indigo { color: #4f46e5; }
+
+/* Pagination Styling */
+.study-nav-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(79, 70, 229, 0.1);
+    background: white;
+    color: #4f46e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.study-nav-btn:hover:not(.disabled) {
+    background: #4f46e5;
+    color: white;
+    transform: scale(1.1);
+}
+
+.study-nav-btn.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.page-indicator {
+    font-weight: 700;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.page-indicator span {
+    color: #4f46e5;
+    font-size: 1.1rem;
+}
+
+.study-page-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.study-page-dot.active {
+    background: #4f46e5;
+    width: 30px;
+    border-radius: 10px;
 }

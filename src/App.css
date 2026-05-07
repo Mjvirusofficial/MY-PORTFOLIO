@@ -1,214 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
- 
-.App {
-  text-align: center;
+/* Global Transitions & Layout */
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow-x: hidden;
+  background-color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Page Entrance Animation */
+.home-root, .about-final-ultra, .bento-gallery-section, .contact-section {
+  animation: pageFadeIn 0.8s ease-out forwards;
 }
-.custom-header{
-  font-size: 30px !important;
+
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* Hero Content Styling - Restored Compact Version */
+.hero-container {
+  min-height: 70vh; /* Reduced height so 'About' is visible below */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-text-col {
+  padding-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* 
-body{
-  background-color: #ff7ed766;
-} */
-
-/* Home */
-.homebtn{
-  font-weight: 500;
-  font-size: 16px;
-  display: inline-block;
-  text-decoration: none;
-  letter-spacing: 1px;
-  padding: 10px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  border: 2px solid rgb(126, 126, 223);
-  color: black;
-  background-color: white;
+.hero-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3.2rem; /* Slightly smaller for compactness */
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 15px;
+  letter-spacing: -2px;
 }
 
-.homebtn:hover{
-  background-color: rgb(126, 126, 223);
-  color: white;
+.name-highlight {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
-.status{
-  font-family: 'Ubuntu', sans-serif;
-}
- 
-.moving{
-  overflow: hidden;
-}
-
-
- /* .AnimatedInHome:before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100;
-  width: 100;
-  background-color: white;
-}  */
-
-
-@keyframes mj {
-  0%{
-    width: 0ch;
-  }
-  50%{
-    width: 16ch;
-  }
-  100%{
-    width:0;
-  }
-}
-
-/* about */
-.me{
-  color: rgb(126, 126, 223);
-  font-family: 'Ubuntu', sans-serif;
-  
-}
-
-.about{
-  font-family: 'Ubuntu', sans-serif;
-
-}
-.line{
-  color:  blue;
-  font-weight: bolder;
-  width: 13rem;
-  height: 50px;
-}
-
-.mypic{
-height: 10%;
-}
-
-.image{
-  border-radius: 6px;
-}
-.bio{
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.text-box{
-  font-size: 40px;
-  font-weight: 700;
-  font-family: 'Ubuntu', sans-serif;
-  width: 100%;
+.hero-animation-wrapper {
   display: flex;
+  align-items: center;
+  font-size: 1.4rem; /* Adjusted for smaller layout */
+  font-weight: 600;
+  color: #64748b;
+  gap: 10px;
 }
 
-.fixed-text{
-  display: inline-block;
-  margin-right: 7px;
-  vertical-align: top;
+.type-animation-box {
+  color: #4f46e5;
+  font-weight: 800;
 }
 
-.amimated{
-  display: inline-block;
-  height: 113px;
-  overflow: hidden;
-}
-
-
-.animated span{
+.status-quote-box {
   position: relative;
-  color: rgb(126, 126, 223);
-  display: block;
+  padding-left: 15px;
+  margin-top: 25px;
 }
 
-.animated span:after{
-  content: "";
+.status-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.quote-accent {
   position: absolute;
   left: 0;
-  height: 130%;
-  right: 0px;
-  background-color: white;
-  border-left: 2px solid black;
-  animation: 4s textType;
-  animation-timing-function: steps(10);
-  animation-iteration-count: infinite;
-  animation-fill-mode: backwards;
+  top: 5px;
+  bottom: 5px;
+  width: 4px;
+  background: #4f46e5;
+  border-radius: 4px;
 }
 
-@keyframes textType {
-  0%{
-    left:0;
-  }
-  50%{
-    left:100%;
-  }
-  100%{
-    left:0;
-  }
+.hero-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #4f46e5;
+  color: white !important;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.2);
+  transition: all 0.3s ease;
 }
 
-
-
-
-/*Animation using in home*/
-.style{
-  display: flex;
-  margin-top:3px;
-  font-size: 25px;
-  font-family: 'Ubuntu', sans-serif;
-
+.hero-primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(79, 70, 229, 0.3);
 }
 
-
-
-.AnimatedInHome{
-  color: rgb(126, 126, 223);
-
-  border-right: 2px solid black;
-  padding-left: 3px;
-
+/* Restored "White Curve" Image Style */
+.hero-img-wrapper {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 40px; /* High curve */
+  box-shadow: 0 20px 50px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.03);
 }
 
-
-.am{
-
+.hero-gif {
+  max-width: 100%;
+  border-radius: 25px; /* Inner curve */
 }
 
+/* Study Detail Pages Premium Styling (Hidden in UI but styles kept) */
+.study-detail-page {
+    background-color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
 
-.dpk{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 28px;
+.detail-hero-section {
+    padding-top: 100px !important;
+    background: linear-gradient(to bottom, rgba(79, 70, 229, 0.03), transparent);
+}
+
+.back-btn-study {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    padding: 8px 15px;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.detail-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background: rgba(79, 70, 229, 0.1);
+    color: #4f46e5;
+    font-size: 0.75rem;
+    font-weight: 800;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+.detail-main-title {
+    color: #1e293b;
+    letter-spacing: -2px;
+}
+
+.detail-header-line {
+    width: 80px;
+    height: 5px;
+    background: #4f46e5;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.glass-info-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(79, 70, 229, 0.1);
+    border-radius: 30px;
+}
+
+.concept-card {
+    background: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+.concept-icon {
+    width: 60px;
+    height: 60px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.step-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.step-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+}
+
+.border-indigo { border-color: #4f46e5 !important; }
+.alert-indigo { background: rgba(79, 70, 229, 0.05); color: #4f46e5; }
+.text-indigo-light { color: #818cf8; }
+
+.premium-feedback-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #4f46e5;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
 }

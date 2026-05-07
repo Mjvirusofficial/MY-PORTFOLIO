@@ -1,160 +1,105 @@
-import React from 'react'
+import React from 'react';
 import fbt from './Img/fbt.png';
 import pbt from './Img/pbt.jpg';
 import cbt from './Img/cbt.jpg';
 import dbt from './Img/dbt.png';
 import sbt from './Img/skewedbt.png';
-
-
+import StudyPageLayout from '../../Component/StudyLayout/StudyPageLayout';
+import { FaTree, FaProjectDiagram, FaLevelUpAlt, FaExchangeAlt } from 'react-icons/fa';
 
 function Tree() {
     return (
-        <div>
-            <div className="container">
-                <h1 className="heading"><u>Tree Data Structure</u></h1>
-            </div>
-
-            <div className="container-fluid">
-                <div className="row detail">
-                    <p>Tree is a non-linear data structure which organizes data in a hierarchical structure and this is a recursive definition. A Tree can have one node or at most two or two or more nodes which is connected by edges, For N nodes, edges are N-1, In a Tree height of nodes are known as level.</p>
-
-                    <p><b>Q.1 On a level L how many nodes can be there in a binary tree🌲</b></p>
-                    <p><b className='main'>Ans:-</b> (2^L) -1; (2 to the powerL (-1));</p>
-
-                    <p><b className="main">2 ^ 1 = 2 - 1 = 1 Node.</b></p>
-                    <p><b className="main">2 ^ 2 = 4 - 1 = 3 Nodes.</b></p>
-                    <p><b className="main">2 ^ 3 = 8 - 1 = 7 Nodes.</b></p>
-                    <p><b className="main">2 ^ 4 = 16 - 1 = 15 Nodes.</b></p>
-
-
-                    <p><b>Q2. What is the maximum number of nodes in a binary tree of height H?</b></p>
-                    <p><b className='main'>Ans:-</b> (2^h) -1(Same like questions no.1)
-                        Dono questions ek hi h agar attention k sath dekho ge to😂</p>
-                </div>
-            </div><hr />
-
-            <div className="container">
-                <h1 className="heading"><u>Binary Tree</u></h1>
-            </div>
-
-            <div className="container-fluid">
-                <div className="row detail">
-                    <p>Binary tree is a kind of tree which can have at most two children, The children in binary tree are known as <b className='main'>LEFT CHILD</b> & <b className='main'>RIGHT CHILD.</b></p>
-
-                    <p><b className=''><i class="fa-brands fa-react"></i> TYPES OF BINARY TREE:-</b></p>
-
-                    {/* <div className="row"> */}
-                    <div className="col-12 col-lg-8">
-                        <p><b className="">1. Full Binary Tree:-</b> Full binary tree is a type of binary tree where each nodes can have either 0 or two child.</p>
-                    </div>
-
-                    <div className="col-12 col-lg-4">
-                        <img src={fbt} class="card-img-top cardimg" alt="Full Binary Tree" />
-                    </div>
-                    {/* </div> */}
-
-                    {/* <div className="row"> */}
-                    <div className="col-12 col-lg-8">
-                        <p><b className="">2.Perfect Binary Tree:-</b> There are two condition to make a perfect binary tree.</p>
-                        <p><b className='main'>First is every internal nodes can have two child</b></p>
-                        <p><b className='main'>And second is all leaf nodes are on same level </b></p>
-                    </div>
-
-                    <div className="col-12 col-lg-4">
-                        <img src={pbt} class="card-img-top cardimg" alt="Perfect Binary Tree" />
-                    </div>
-
-                    {/* </div> */}
-                    <div className="col-12 col-lg-8">
-
-                        <p><b className="">3. Complete Binary Tree:-</b> In complete binary tree all levels are completely filled except possibly the last level</p>
-                        <p><b className="main">Last level must have its key as left as possible.</b></p>
-                    </div>
-                    <div className="col-12 col-lg-4">
-                        <img src={cbt} class="card-img-top cardimg" alt="..." />
-                    </div>
-
-                    <div className="col-12 col-lg-8">
-
-                        <p><b className="">4. Degenerate Binary Tree:-</b> Every parents node has exactly one child.</p>
-                    </div>
-                    <div className="col-12 col-lg-4">
-                        <img src={dbt} class="card-img-top cardimg" alt="Degenerate Binary Tree" />
-                    </div>
-
-                    <div className="col-12 col-lg-8">
-
-                        <p><b className="">4. Skewed Binary Tree:-</b> All nodes have only one child except the last one (leaf) which hasn't a child. It divided into two types: left skewed binary tree and right skewed binary tree.</p>
-                    </div>
-                    <div className="col-12 col-lg-4">
-                        <img src={sbt} class="card-img-top cardimg" alt="Degenerate Binary Tree" />
-                    </div>
-
-                </div>
-            </div><hr />
-
-            <div className="container">
-                <h1 className="heading"><u>Traversing in Tree:-
-                </u></h1>
-            </div>
-
-            <div className="container-fluid">
-                <div className="row detail">
-                    <p>In computer science, tree traversal is a form of graph traversal and refers to the process of visiting each node in a tree data structure.</p>
-
-                    <p><b className="main">1.Pre Order Traversal</b></p>
-                    <p><b className="main">2.Post Order Traversal</b></p>
-                    <p><b className="main">3.In Order Traversal</b></p>
-                    <p><b className="main">4.Level Order Traversal</b></p>
-
-                    <p><b>1.Pre Order Traversal:-</b> Pre order traversal is a way to traverse the binary tree in which our directions are fixed i.e root ➡️ left ➡️ right. </p>
-
-                    <p>It means first we will traverse the <span className='main'>root</span> of the tree and then go to its <span className='main'>left</span> subtree and after traversing that subtree we will move to its <span className='main'>right</span> part of the <span className='main'>Subtree.</span>.</p>
-
-                    <p><b>Post Order Traversal:-</b> it is a traversing technique, where the left child return first including its all subtree.</p>
-                    <p>Then, visit the right child including its entire subtree. And finally return the Node.</p>
-
-                    <p><b className="main">Left child ➡️  Right child ➡️ Root</b></p>
-
-                    <p><b>In Order Traversal:- </b>it is also a traversing technique, where the left child return first including its all subtree.</p>
-
-                    <p>Then,  return the Node.And finally visit the right child including its entire subtree.</p>
-                    <p><b className="main">Left child ➡️ Node ➡️ Right child;</b></p>
-
-                    <p><b>4.Level Order Traversal:- </b>It's traverse  all the level of the tree.</p>
-                    <p>A Level Order Traversal is a traversal which always traverses based on the level of the tree.</p>
-                    <p>So, this traversal first traverses the nodes corresponding to Level 0, and then Level 1, and so on, from the root node. In the example Binary Tree above, the level order traversal will be:</p>
-                    <p><b className="main">(Root) 1st level ➡️ 2nd level ➡️ 3rd level ➡️ Same repeat.</b></p>
-                </div>
-            </div><hr />
-
-            <div className="container">
-                <h1 className="heading"><u>Implementation of Tree</u></h1>
-            </div>
-
-            <div className="container-fluid">
-                <div className="row detail">
-
+        <StudyPageLayout 
+            title="Tree Data Structure" 
+            badge="NON-LINEAR HIERARCHY" 
+            icon={<FaTree className="me-2" />}
+        >
+            {/* Intro Section */}
+            <div className="glass-info-card p-5 mb-5 shadow-sm">
+                <h2 className="fw-bold mb-3">Hierarchical Organization</h2>
+                <p className="lead">
+                    A Tree is a non-linear data structure that organizes data in a <strong>hierarchical structure</strong>. 
+                    It is defined recursively as a collection of nodes connected by edges.
+                </p>
+                <div className="alert alert-indigo mt-3 border-0">
+                    <strong>Key Property:</strong> For a tree with N nodes, there are exactly <strong>N-1 edges</strong>.
                 </div>
             </div>
 
+            {/* Binary Tree Section */}
+            <section className="mb-5">
+                <h2 className="section-title mb-4">Binary Tree Types</h2>
+                <div className="row g-4">
+                    {[
+                        { title: 'Full Binary Tree', img: fbt, desc: 'Every node has either 0 or 2 children.' },
+                        { title: 'Perfect Binary Tree', img: pbt, desc: 'All internal nodes have 2 children and all leaves are at the same level.' },
+                        { title: 'Complete Binary Tree', img: cbt, desc: 'All levels are filled except possibly the last, which is filled from the left.' },
+                        { title: 'Degenerate Tree', img: dbt, desc: 'Every parent node has exactly one child.' },
+                        { title: 'Skewed Tree', img: sbt, desc: 'All nodes have only one child except the leaf. Can be Left or Right skewed.' }
+                    ].map((item, idx) => (
+                        <div className="col-lg-6" key={idx}>
+                            <div className="concept-card p-4 h-100 shadow-sm overflow-hidden">
+                                <div className="row align-items-center">
+                                    <div className="col-sm-7">
+                                        <h4 className="fw-bold text-indigo">{item.title}</h4>
+                                        <p className="small text-muted">{item.desc}</p>
+                                    </div>
+                                    <div className="col-sm-5 text-center">
+                                        <img src={item.img} className="img-fluid rounded-3 border" style={{ maxHeight: '120px' }} alt={item.title} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
+            {/* Traversing Section */}
+            <section className="p-5 bg-dark text-white rounded-5 shadow-lg mb-5">
+                <h2 className="fw-bold mb-4 d-flex align-items-center">
+                    <FaExchangeAlt className="text-indigo-light me-3" /> Tree Traversal Techniques
+                </h2>
+                <div className="row g-4">
+                    <div className="col-md-3">
+                        <div className="p-3 border border-secondary rounded-4 h-100">
+                            <h5 className="text-indigo-light fw-bold">Pre-Order</h5>
+                            <p className="small opacity-75">Root ➡️ Left ➡️ Right</p>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="p-3 border border-secondary rounded-4 h-100">
+                            <h5 className="text-success fw-bold">In-Order</h5>
+                            <p className="small opacity-75">Left ➡️ Node ➡️ Right</p>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="p-3 border border-secondary rounded-4 h-100">
+                            <h5 className="text-warning fw-bold">Post-Order</h5>
+                            <p className="small opacity-75">Left ➡️ Right ➡️ Root</p>
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="p-3 border border-secondary rounded-4 h-100">
+                            <h5 className="text-info fw-bold">Level-Order</h5>
+                            <p className="small opacity-75">BFS (Level by Level)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-
-            {/* After */}
-
-            <div className="container">
-                <h1 className="heading"><u></u></h1>
-            </div>
-
-            <div className="container-fluid">
-                <div className="row detail">
-
+            {/* Level Math Card */}
+            <div className="concept-card p-5 border-indigo border-start border-5 shadow-sm">
+                <h3 className="fw-bold mb-3"><FaLevelUpAlt className="text-indigo me-2" /> Mathematical Properties</h3>
+                <p className="lead">Number of nodes at level <strong>L</strong> in a binary tree: <strong>2<sup>L</sup></strong></p>
+                <div className="bg-light p-3 rounded-3 mt-3 font-monospace small">
+                    Level 0: 2^0 = 1 Node<br/>
+                    Level 1: 2^1 = 2 Nodes<br/>
+                    Level 2: 2^2 = 4 Nodes<br/>
+                    Level 3: 2^3 = 8 Nodes
                 </div>
             </div>
-
-        </div>
-    )
+        </StudyPageLayout>
+    );
 }
 
-export default Tree
+export default Tree;
