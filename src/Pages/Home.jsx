@@ -5,6 +5,8 @@ import { TypeAnimation } from 'react-type-animation';
 
 import { NavLink } from 'react-router-dom'
 import About from './About';
+import Gallery from '../Component/Gallery/Gallery';
+
 function Home() {
   return (
     <div>
@@ -17,13 +19,16 @@ function Home() {
               <div className="AnimatedInHome">
                 <TypeAnimation
                   sequence={[
-                    'Developer',
+                    'MERN Stack Developer',
+                    2000,
+                    'Software Engineer',
+                    2000,
+                    'Full Stack Developer',
                     2000,
                     'YouTuber',
                     1000,
                     'Gamer',
                     2000,
-                    'Lover😅', // Types 'Three' without deleting 'Two'
                     () => {
                       console.log('Done typing!'); // Place optional callbacks anywhere in the array
                     }
@@ -49,8 +54,9 @@ function Home() {
         </div>
       </div>
       <About />
+      <Gallery />
     </div>
   )
 }
 
-export default Home
+export default Home

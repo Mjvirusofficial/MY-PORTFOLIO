@@ -31,13 +31,16 @@ function Navbar() {
                 <NavLink className="nav-link active" onClick={hideNavbar} aria-current="page" to="/project">Project</NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="nav-link active" onClick={hideNavbar} aria-current="page" to="/gallery">Gallery</NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link active" onClick={hideNavbar} aria-current="page" to="/study">Study</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active" onClick={hideNavbar} aria-current="page" to="/about">About us</NavLink>
+                <NavLink className="nav-link active" onClick={hideNavbar} aria-current="page" to="/about">About</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active" onClick={hideNavbar} aria-current="page" to="/contact">Contact us</NavLink>
+                <NavLink className="nav-link active" onClick={hideNavbar} aria-current="page" to="/contact">Contact</NavLink>
               </li>
             </ul>
           </div>

@@ -27,6 +27,7 @@ import Computer from './Pages/Study/Compter.jsx';
 import ReactJS from './Pages/Study/ReactJS';
 import FifthSem from './Pages/Study/B.tech_5thSem/FifthSem';
 import DBMS from './Pages/Study/B.tech_5thSem/DBMS';
+import GalleryPage from './Pages/GalleryPage';
 
 function App() {
   return (
@@ -37,7 +38,9 @@ function App() {
        <Route path='/about' element={<About/>}/>
        <Route path='/contact' element={<Contact/>}/>
        <Route path='/project' element={<Project/>}/>
+       <Route path='/gallery' element={<GalleryPage/>}/>
        <Route path='/study' element={<Study/>}/>
+
        <Route path='/DSA' element={<DSA/>}/>
        <Route path='/c' element={<C/>}/>
        <Route path='/queue' element={<Queue/>}/>
