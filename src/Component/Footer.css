@@ -60,7 +60,7 @@
 .footer-icons-row {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 40px; /* Increased gap for better touch area */
 }
 
 .social-icon-link {

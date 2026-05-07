@@ -5,7 +5,7 @@ import cbt from './Img/cbt.jpg';
 import dbt from './Img/dbt.png';
 import sbt from './Img/skewedbt.png';
 import StudyPageLayout from '../../Component/StudyLayout/StudyPageLayout';
-import { FaTree, FaProjectDiagram, FaLevelUpAlt, FaExchangeAlt } from 'react-icons/fa';
+import { FaTree, FaLevelUpAlt, FaExchangeAlt } from 'react-icons/fa';
 
 function Tree() {
     return (

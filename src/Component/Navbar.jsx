@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaHome, FaRocket, FaImages, FaBook, FaUserAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaHome, FaRocket, FaImages, FaUserAlt, FaPaperPlane } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
-    const controlNavbar = () => {
-        if (window.scrollY > lastScrollY && window.scrollY > 80) { 
-            setIsVisible(false); 
-        } else { 
-            setIsVisible(true);  
-        }
-        setLastScrollY(window.scrollY);
-    };
-
     useEffect(() => {
+        const controlNavbar = () => {
+            if (window.scrollY > lastScrollY && window.scrollY > 80) { 
+                setIsVisible(false); 
+            } else { 
+                setIsVisible(true);  
+            }
+            setLastScrollY(window.scrollY);
+        };
+
         window.addEventListener('scroll', controlNavbar);
         return () => {
             window.removeEventListener('scroll', controlNavbar);
@@ -109,16 +109,17 @@ const Navbar = () => {
 
                 @media (max-width: 991px) {
                     .nav-link-item span { display: none; }
-                    .nav-link-item { padding: 12px; }
-                    .nav-links-wrapper { gap: 8px; }
-                    .navbar-smart { padding: 10px 0; }
-                    body { padding-top: 75px; }
+                    .nav-link-item { padding: 10px; } /* Increased from 8px */
+                    .nav-links-wrapper { gap: 15px; } /* Much better gap */
+                    .navbar-smart { padding: 8px 0; }
+                    body { padding-top: 65px; } /* Corrected body offset */
                 }
 
                 @media (max-width: 480px) {
                     .brand-text { display: none; }
                     .nav-container-inner { justify-content: center; }
-                    .nav-link-item svg { font-size: 1.3rem; }
+                    .nav-link-item svg { font-size: 1.25rem; } /* Slightly larger for clarity */
+                    .nav-links-wrapper { gap: 12px; }
                 }
             `}</style>
 

@@ -5,13 +5,13 @@ import About from './About';
 import Gallery from '../Component/Gallery/Gallery';
 
 function Home() {
-    return (
+  return (
     <div className="home-root">
       <div className="container hero-container">
         <div className="row align-items-center min-vh-80">
           <div className="col-md-6 hero-text-col">
             <h1 className='hero-title'>Hello I am <span className='name-highlight'>Deepak Ravidas</span></h1>
-            
+
             <div className="hero-animation-wrapper">
               <span className="static-text">And I'm </span>
               <div className="type-animation-box">

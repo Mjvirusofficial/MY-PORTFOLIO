@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import img2 from '../image/img2.jpg';
-import { FaWhatsapp, FaEnvelope, FaCode, FaRocket, FaTerminal, FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaInstagram, FaLinkedin, FaGithub, FaCloud, FaVideo } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaTerminal, FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaInstagram, FaLinkedin, FaGithub, FaCloud } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiMongodb, SiGithubactions } from 'react-icons/si';
 
 const About = () => {

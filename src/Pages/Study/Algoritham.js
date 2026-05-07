@@ -17,7 +17,7 @@ function Algoritham() {
                     typically to solve a class of specific problems or to perform a computation.
                 </p>
                 <div className="bg-dark text-success p-3 rounded-3 mt-3 font-monospace small">
-                    // Example: AddTwoNumbers(a, b)<br/>
+                    * Example: AddTwoNumbers(a, b)<br/>
                     1. Start<br/>
                     2. Take inputs a and b<br/>
                     3. Calculate c = a + b<br/>

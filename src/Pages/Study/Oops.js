@@ -1,6 +1,6 @@
 import React from 'react';
 import StudyPageLayout from '../../Component/StudyLayout/StudyPageLayout';
-import { FaShapes, FaCube, FaProjectDiagram, FaShieldAlt, FaGhost, FaUsersCog, FaMagic, FaBug, FaTools } from 'react-icons/fa';
+import { FaShapes, FaCube, FaProjectDiagram, FaShieldAlt, FaGhost, FaUsersCog, FaMagic, FaBug } from 'react-icons/fa';
 
 function Oops() {
   return (

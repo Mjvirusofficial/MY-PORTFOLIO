@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBook, FaCode, FaArrowLeft } from 'react-icons/fa';
+import { FaCode, FaArrowLeft } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 const StudyPageLayout = ({ title, badge, icon, children }) => {

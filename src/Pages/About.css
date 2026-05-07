@@ -147,12 +147,12 @@
     box-shadow: 0 15px 30px rgba(79, 70, 229, 0.2);
 }
 
-/* UNTOUCHED: Technical Expertise (Round Circles) Styles */
+/* Technical Expertise (Round Circles) Styles */
 .round-skills-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 35px; /* Balanced gap for icons */
 }
 
 .skill-circle {
@@ -191,5 +191,25 @@
 
 @media (max-width: 991px) {
     .name-title-v4 { font-size: 2.2rem; }
-    .content-side-ultra { padding-top: 20px; }
+    .content-side-ultra { padding-top: 40px; }
+    .bg-text-ultra { font-size: 5rem; top: 0; }
+    .image-frame-final { max-width: 400px; margin: 0 auto; }
+}
+
+@media (max-width: 768px) {
+    .name-title-v4 { font-size: 1.8rem; text-align: center; }
+    .role-sub-v4 { font-size: 1rem; text-align: center; }
+    .bio-description-v4 p { font-size: 1rem; text-align: center; }
+    .social-pill-right { justify-content: center; }
+    .btn-action-group { flex-direction: column; width: 100%; }
+    .btn-action-group a { width: 100%; }
+    .status-highlight-v4 { font-size: 0.9rem; text-align: center; }
+    .skill-circle { width: 90px; height: 90px; }
+    .skill-icon-large { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+    .bg-text-ultra { display: none; }
+    .name-title-v4 { font-size: 1.6rem; }
+    .round-skills-grid { gap: 15px; }
 }
