@@ -2,7 +2,7 @@ import React from 'react';
 import './Project.css';
 import ProjectData from '../Component/Project/ProjectData';
 import Structure from '../Component/Project/Structure/Structure';
-import { FaTerminal, FaCodeBranch } from 'react-icons/fa';
+import { FaCodeBranch } from 'react-icons/fa';
 
 function Project() {
   // Reversing data to show latest projects first, but keeping specific order
