@@ -109,17 +109,22 @@ const Navbar = () => {
 
                 @media (max-width: 991px) {
                     .nav-link-item span { display: none; }
-                    .nav-link-item { padding: 10px; } /* Increased from 8px */
-                    .nav-links-wrapper { gap: 15px; } /* Much better gap */
+                    .nav-link-item { padding: 10px; border-radius: 15px; } 
+                    .nav-links-wrapper { 
+                        gap: 22px; 
+                        padding-left: 12px !important; /* Balanced gap */
+                        padding-right: 12px !important;
+                        justify-content: flex-start;
+                    }
                     .navbar-smart { padding: 8px 0; }
-                    body { padding-top: 65px; } /* Corrected body offset */
+                    body { padding-top: 55px; } /* Reduced from 65px */
                 }
 
                 @media (max-width: 480px) {
                     .brand-text { display: none; }
                     .nav-container-inner { justify-content: center; }
-                    .nav-link-item svg { font-size: 1.25rem; } /* Slightly larger for clarity */
-                    .nav-links-wrapper { gap: 12px; }
+                    .nav-link-item svg { font-size: 1.25rem; }
+                    .nav-links-wrapper { gap: 18px; padding-left: 10px !important; } 
                 }
             `}</style>
 

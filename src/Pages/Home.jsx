@@ -10,7 +10,14 @@ function Home() {
       <div className="container hero-container">
         <div className="row align-items-center min-vh-80">
           <div className="col-md-6 hero-text-col">
-            <h1 className='hero-title'>Hello I am <span className='name-highlight'>Deepak Ravidas</span></h1>
+            <h1 className='hero-title-desktop d-none d-md-block'>
+              Hello I am <span className='name-highlight'>Deepak Ravidas</span>
+            </h1>
+            
+            <div className="hero-title-mobile d-md-none">
+              <span className="m-hello"><span className="m-wave">👋</span> Hello! <span className="m-tiny">I'm</span></span>
+              <span className="m-name">Deepak Ravidas</span>
+            </div>
 
             <div className="hero-animation-wrapper">
               <span className="static-text">And I'm </span>

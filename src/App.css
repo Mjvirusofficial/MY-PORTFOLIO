@@ -144,61 +144,105 @@ body {
 @media (max-width: 991px) {
   .hero-container {
     min-height: auto;
-    padding: 30px 15px 40px !important; /* Forces equal side padding */
+    padding: 30px 12px 15px !important; /* Balanced 12px side padding */
     text-align: center;
     width: 100% !important;
     margin: 0 auto !important;
   }
   
-  .hero-container .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  .hero-title-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 0 !important; /* Aligned with container's 15px */
   }
 
-  .hero-text-col {
-    padding: 0;
-    margin-top: 25px;
-    margin-bottom: 0;
+  .m-hello {
+    font-size: 0.9rem;
+    color: #4f46e5;
+    font-weight: 800;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    background: rgba(79, 70, 229, 0.05);
+    padding: 6px 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(79, 70, 229, 0.1);
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 8px;
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .m-wave { font-size: 1.1rem; }
+  .m-tiny { font-size: 0.75rem; opacity: 0.8; font-weight: 600; vertical-align: top; margin-left: -1px; }
+
+  .m-name {
+    font-size: 3.2rem; 
+    font-weight: 900;
+    letter-spacing: -2.5px;
+    line-height: 1;
+    background: linear-gradient(135deg, #4f46e5 0%, #818cf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left; /* Aligned Left */
+    margin-top: 0;
+    animation: slideInLeft 1s ease-out 0.2s forwards; /* Also Slide in Left */
+    opacity: 0;
+    text-shadow: 0 10px 20px rgba(79, 70, 229, 0.1);
+  }
+
+  @keyframes slideInLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes slideInRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
   }
 
   .hero-img-col {
-    margin-bottom: 5px;
-    padding-top: 20px; /* Added space so image doesn't stick to top */
+    margin-bottom: 10px;
+    padding-top: 35px !important; /* Balanced gap below navbar */
+  }
+  
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .hero-text-col, .hero-img-col {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .hero-animation-wrapper { 
+    justify-content: flex-end; /* Aligned Right */
+    font-size: 1.1rem; 
+    margin-top: 5px; 
+    padding-right: 15px; /* Slight gap from the right edge */
+  }
+
+  .hero-primary-btn {
+    margin-bottom: 40px; /* Space before About Me section starts */
   }
 
   .hero-img-wrapper {
-    max-width: 240px; 
+    max-width: 220px; 
     margin: 0 auto;
-    padding: 10px;
+    padding: 8px;
     border-radius: 25px;
   }
-
-  .hero-animation-wrapper {
-    justify-content: center;
-    font-size: 1rem;
-    margin-top: 5px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding-left: 20px !important; 
-    padding-right: 20px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  .hero-container {
-    padding-top: 40px !important; /* Space after fixed navbar */
-  }
-  .hero-title { font-size: 1.8rem; line-height: 1.2; margin-bottom: 10px; }
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 1.6rem; }
-  .container {
-    padding-left: 18px !important;
-    padding-right: 18px !important;
-  }
+  .m-name { font-size: 2.4rem; }
+  .m-hello { font-size: 1.3rem; }
 }
 
 /* Study Detail Pages Premium Styling (Hidden in UI but styles kept) */

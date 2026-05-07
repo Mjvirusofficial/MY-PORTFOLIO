@@ -83,6 +83,53 @@ const About = () => {
                 </div>
             </div>
 
+            {/* Educational Qualifications Section */}
+            <div className="education-v4-section mt-5 pt-5">
+                <h3 className="text-center fw-bold display-6 mb-5">Educational <span className="text-indigo">Qualifications</span> 🎓</h3>
+                <div className="row g-4 justify-content-center">
+                    {/* B.Tech */}
+                    <div className="col-md-6 col-lg-5">
+                        <div className="edu-card-v4 p-4 h-100 shadow-sm border rounded-5 position-relative overflow-hidden">
+                            <div className="edu-card-accent"></div>
+                            <div className="d-flex align-items-center mb-3">
+                                <div className="edu-icon-box me-3">💻</div>
+                                <div>
+                                    <h5 className="fw-bold mb-0">Bachelor of Technology (B.Tech)</h5>
+                                    <span className="badge bg-indigo-light text-indigo">Computer Science Engineering</span>
+                                </div>
+                            </div>
+                            <p className="mb-2 text-muted"><strong>University:</strong> RGPV, Bhopal</p>
+                            <p className="mb-2 text-muted"><strong>Institute:</strong> Swami Vivekanand College of Science and Technology, Bhopal (M.P.)</p>
+                            <div className="grade-badge-premium mt-3">
+                                <span className="grade-label">Result:</span> <span className="grade-value-success">7.8 CGPA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Diploma */}
+                    <div className="col-md-6 col-lg-5">
+                        <div className="edu-card-v4 p-4 h-100 shadow-sm border rounded-5 position-relative overflow-hidden">
+                            <div className="edu-card-accent-success"></div>
+                            <div className="d-flex align-items-center mb-3">
+                                <div className="edu-icon-box me-3">👨‍💻</div>
+                                <div>
+                                    <h5 className="fw-bold mb-0">Diploma in Engineering</h5>
+                                    <span className="badge bg-success-light text-success">Computer Science Engineering</span>
+                                </div>
+                            </div>
+                            <p className="mb-2 text-muted"><strong>University:</strong> JUT, Ranchi</p>
+                            <p className="mb-2 text-muted">
+                                <strong>Institute:</strong> Government Polytechnic, Koderma 
+                                <br/>(खनन संस्थान कोडरमा)
+                            </p>
+                            <div className="grade-badge-premium mt-3">
+                                <span className="grade-label">Result:</span> <span className="grade-value-success">80% Marks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* UNTOUCHED: Technical Expertise (Round Circles) */}
             <div className="skills-round-section mt-5 pt-5 border-top">
                 <h3 className="text-center fw-bold display-6 mb-5">Technical <span className="text-indigo">Expertise</span> 🔧</h3>
