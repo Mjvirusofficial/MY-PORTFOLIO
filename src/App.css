@@ -216,8 +216,12 @@ body {
     width: 100% !important;
   }
 
-  .hero-text-col, .hero-img-col {
+  .hero-text-col {
     padding: 0 !important;
+    width: 100% !important;
+  }
+  .hero-img-col {
+    padding: 0 15px !important;
     width: 100% !important;
   }
 
@@ -233,16 +237,25 @@ body {
   }
 
   .hero-img-wrapper {
-    max-width: 220px; 
+    width: 100%;
+    max-width: 350px; 
     margin: 0 auto;
     padding: 8px;
     border-radius: 25px;
+  }
+
+  .hero-gif {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
 @media (max-width: 480px) {
   .m-name { font-size: 2.4rem; }
   .m-hello { font-size: 1.3rem; }
+  .hero-img-col {
+    padding: 0 30px !important;
+  }
 }
 
 /* Study Detail Pages Premium Styling (Hidden in UI but styles kept) */
