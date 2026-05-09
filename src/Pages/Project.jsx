@@ -3,10 +3,16 @@ import './Project.css';
 import ProjectData from '../Component/Project/ProjectData';
 import Structure from '../Component/Project/Structure/Structure';
 import { FaCodeBranch } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
-function Project() {
+function Project({ previewMode = false }) {
   // Reversing data to show latest projects first, but keeping specific order
-  const projectsToDisplay = [ProjectData[0], ...[...ProjectData.slice(1)].reverse()];
+  let projectsToDisplay = [ProjectData[0], ...[...ProjectData.slice(1)].reverse()];
+
+  if (previewMode) {
+    const dHisaabProject = ProjectData.find(p => p.title === 'D-Hisaab') || projectsToDisplay[0];
+    projectsToDisplay = [dHisaabProject];
+  }
 
   return (
     <div className="project-page-root">
@@ -40,6 +46,14 @@ function Project() {
             github={i.github}
           />
         ))}
+
+        {previewMode && (
+          <div className="text-center mt-5">
+            <NavLink to="/project" className="hero-primary-btn">
+              View All Projects <span className="btn-arrow">→</span>
+            </NavLink>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -2,6 +2,8 @@ import React from 'react';
 import fimg from '../image/img1.gif'
 import { TypeAnimation } from 'react-type-animation';
 import About from './About';
+import Project from './Project';
+import Skills from '../Component/Skills/Skills';
 import Gallery from '../Component/Gallery/Gallery';
 
 function Home() {
@@ -15,7 +17,7 @@ function Home() {
             </h1>
             
             <div className="hero-title-mobile d-md-none">
-              <span className="m-hello"><span className="m-wave">👋</span> Hello! <span className="m-tiny">I'm</span></span>
+              <span className="m-hello"><span className="m-wave">👋</span> Hello I am</span>
               <span className="m-name">Deepak Ravidas</span>
             </div>
 
@@ -54,7 +56,9 @@ function Home() {
           </div>
         </div>
       </div>
-      <About />
+      <About hideSkills={true} />
+      <Project previewMode={true} />
+      <Skills />
       <Gallery />
     </div>
   )

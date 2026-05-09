@@ -4,20 +4,9 @@ import img2 from '../image/img2.jpg';
 import { FaWhatsapp, FaEnvelope, FaTerminal, FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaInstagram, FaLinkedin, FaGithub, FaCloud } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiMongodb, SiGithubactions } from 'react-icons/si';
 
-const About = () => {
-    // Technical expertise data (untouched)
-    const skills = [
-        { name: 'HTML5', icon: <FaHtml5 />, color: '#E34F26' },
-        { name: 'CSS3', icon: <FaCss3Alt />, color: '#1572B6' },
-        { name: 'React', icon: <FaReact />, color: '#61DAFB' },
-        { name: 'Next.js', icon: <SiNextdotjs />, color: '#000000' },
-        { name: 'JavaScript', icon: <FaJs />, color: '#F7DF1E' },
-        { name: 'Tailwind', icon: <SiTailwindcss />, color: '#06B6D4' },
-        { name: 'Node.js', icon: <FaNodeJs />, color: '#339933' },
-        { name: 'MongoDB', icon: <SiMongodb />, color: '#47A248' },
-        { name: 'DevOps', icon: <FaCloud />, color: '#4285F4' },
-        { name: 'CI/CD', icon: <SiGithubactions />, color: '#2088FF' },
-    ];
+import Skills from '../Component/Skills/Skills';
+
+const About = ({ hideSkills = false }) => {
 
     return (
         <div id="about-me-section" className="about-final-ultra container mt-5 pb-5">
@@ -83,67 +72,87 @@ const About = () => {
                 </div>
             </div>
 
+
             {/* Educational Qualifications Section */}
-            <div className="education-v4-section mt-5 pt-5">
-                <h3 className="text-center fw-bold display-6 mb-5">Educational <span className="text-indigo">Qualifications</span> 🎓</h3>
-                <div className="row g-4 justify-content-center">
-                    {/* B.Tech */}
-                    <div className="col-md-6 col-lg-5">
-                        <div className="edu-card-v4 p-4 h-100 shadow-sm border rounded-5 position-relative overflow-hidden">
-                            <div className="edu-card-accent"></div>
-                            <div className="d-flex align-items-center mb-3">
-                                <div className="edu-icon-box me-3">💻</div>
-                                <div>
-                                    <h5 className="fw-bold mb-0">Bachelor of Technology (B.Tech)</h5>
-                                    <span className="badge bg-indigo-light text-indigo">Computer Science Engineering</span>
+            <div className="education-clean-section mt-5 pt-5">
+                <div className="text-center mb-5 position-relative">
+                    <h3 className="fw-bold display-6">Educational <span className="text-indigo">Journey</span> 🎓</h3>
+                    <div className='indigo-dot mx-auto mt-3'></div>
+                </div>
+
+                <div className="timeline-journey-container mx-auto" style={{ maxWidth: '900px' }}>
+                    {/* The Animated Bar */}
+                    <div className="timeline-vertical-bar">
+                        <div className="bar-fill-animation"></div>
+                    </div>
+
+                    {/* Diploma - Top Item */}
+                    <div className="timeline-item mb-5">
+                        <div className="timeline-dot-v6 pulse-indigo">
+                            <span className="dot-icon">🎓</span>
+                        </div>
+                        <div className="premium-edu-box glass-card-v5 p-4 p-md-5 rounded-5 position-relative">
+
+                            <div className="row align-items-center g-4">
+                                <div className="col-md-8">
+                                    <div className="d-flex align-items-center mb-3">
+                                        <div>
+                                            <h4 className="fw-bold text-dark mb-0">Diploma in Engineering</h4>
+                                            <span className="text-indigo fw-semibold small">Computer Science Engineering</span>
+                                        </div>
+                                    </div>
+                                    <div className="institute-details p-3 rounded-4 bg-light-indigo mb-3">
+                                        <p className="mb-0 fw-bold text-dark">Government Polytechnic, Koderma</p>
+                                        <p className="mb-0 text-secondary small">(खनन संस्थान कोडरमा) – Board: JUT, Ranchi</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <p className="mb-2 text-muted"><strong>University:</strong> RGPV, Bhopal</p>
-                            <p className="mb-2 text-muted"><strong>Institute:</strong> Swami Vivekanand College of Science and Technology, Bhopal (M.P.)</p>
-                            <div className="grade-badge-premium mt-3">
-                                <span className="grade-label">Result:</span> <span className="grade-value-success">7.8 CGPA</span>
+                                <div className="col-md-4 text-md-end">
+                                    <div className="score-badge p-3 rounded-4 bg-white shadow-sm border border-indigo-subtle">
+                                        <span className="d-block text-secondary small fw-bold">RESULT</span>
+                                        <span className="text-indigo display-6 fw-bold">80%</span>
+                                        <span className="d-block text-indigo small fw-bold mt-1">✓ Completed</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Diploma */}
-                    <div className="col-md-6 col-lg-5">
-                        <div className="edu-card-v4 p-4 h-100 shadow-sm border rounded-5 position-relative overflow-hidden">
-                            <div className="edu-card-accent-success"></div>
-                            <div className="d-flex align-items-center mb-3">
-                                <div className="edu-icon-box me-3">👨‍💻</div>
-                                <div>
-                                    <h5 className="fw-bold mb-0">Diploma in Engineering</h5>
-                                    <span className="badge bg-success-light text-success">Computer Science Engineering</span>
+                    {/* B.Tech - Bottom Item */}
+                    <div className="timeline-item">
+                        <div className="timeline-dot-v6 pulse-indigo delay-dot">
+                            <span className="dot-icon">💻</span>
+                        </div>
+                        <div className="premium-edu-box glass-card-v5 p-4 p-md-5 rounded-5 position-relative">
+
+                            <div className="row align-items-center g-4">
+                                <div className="col-md-8">
+                                    <div className="d-flex align-items-center mb-3">
+                                        <div>
+                                            <h4 className="fw-bold text-dark mb-0">Bachelor of Technology (B.Tech)</h4>
+                                            <span className="text-indigo fw-semibold small">Computer Science Engineering</span>
+                                        </div>
+                                    </div>
+                                    <div className="institute-details p-3 rounded-4 bg-light-indigo mb-3">
+                                        <p className="mb-0 fw-bold text-dark">Swami Vivekanand College of Science and Technology</p>
+                                        <p className="mb-0 text-secondary small">Bhopal (M.P.) – Board: RGPV, Bhopal</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <p className="mb-2 text-muted"><strong>University:</strong> JUT, Ranchi</p>
-                            <p className="mb-2 text-muted">
-                                <strong>Institute:</strong> Government Polytechnic, Koderma 
-                                <br/>(खनन संस्थान कोडरमा)
-                            </p>
-                            <div className="grade-badge-premium mt-3">
-                                <span className="grade-label">Result:</span> <span className="grade-value-success">80% Marks</span>
+                                <div className="col-md-4 text-md-end">
+                                    <div className="score-badge p-3 rounded-4 bg-white shadow-sm border border-indigo-subtle">
+                                        <span className="d-block text-secondary small fw-bold">RESULT</span>
+                                        <span className="text-indigo display-6 fw-bold">7.8</span>
+                                        <span className="small text-indigo fw-bold ms-1">CGPA</span>
+                                        <span className="d-block text-indigo small fw-bold mt-1">✓ Completed</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* UNTOUCHED: Technical Expertise (Round Circles) */}
-            <div className="skills-round-section mt-5 pt-5 border-top">
-                <h3 className="text-center fw-bold display-6 mb-5">Technical <span className="text-indigo">Expertise</span> 🔧</h3>
-                <div className="round-skills-grid">
-                    {skills.map((skill, index) => (
-                        <div key={index} className="skill-circle-wrapper">
-                            <div className="skill-circle" style={{ '--skill-color': skill.color }}>
-                                <div className="skill-icon-large">{skill.icon}</div>
-                                <div className="skill-overlay-name">{skill.name}</div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            {/* Technical Expertise component */}
+            {hideSkills ? null : <Skills />}
         </div>
     );
 };

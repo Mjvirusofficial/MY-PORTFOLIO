@@ -30,6 +30,11 @@
     overflow: hidden;
 }
 
+.insta-reel-wrapper {
+    padding-bottom: 125%; /* Adjust for 4:5 or 9:16 vertical video */
+    background: #000;
+}
+
 .project-iframe {
     position: absolute;
     top: 0;

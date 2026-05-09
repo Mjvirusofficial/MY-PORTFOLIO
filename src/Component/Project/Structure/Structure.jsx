@@ -9,13 +9,15 @@ const Structure = (mj) => {
                 {/* Media Section: Video or Placeholder */}
                 <div className="col-lg-6 project-media-container">
                     {mj.youtube && mj.youtube !== 'coming_soon' ? (
-                        <div className="video-responsive-wrapper shadow-lg">
+                        <div className={`video-responsive-wrapper shadow-lg ${mj.youtube.includes('instagram.com') ? 'insta-reel-wrapper' : ''}`}>
                             <iframe 
                                 className='project-iframe' 
                                 src={mj.youtube} 
                                 title={mj.title} 
                                 frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                scrolling={mj.youtube.includes('instagram.com') ? "no" : "auto"}
+                                allowtransparency={mj.youtube.includes('instagram.com') ? "true" : "false"}
+                                allow={mj.youtube.includes('instagram.com') ? "encrypted-media" : "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}
                                 allowFullScreen
                             ></iframe>
                         </div>

@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <>
             <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,800;0,900;1,900&display=swap');
 
                 body {
                     padding-top: 35px; /* Final adjustment to 50px */
@@ -62,14 +62,59 @@ const Navbar = () => {
                     max-width: 1200px;
                 }
 
-                .brand-text {
-                    font-weight: 800;
-                    font-size: 1.3rem;
-                    color: #1e293b;
+                .brand-wrapper {
                     text-decoration: none;
+                    position: relative;
+                    border-radius: 12px;
+                    display: inline-flex;
+                    margin-left: 10px;
                 }
 
-                .brand-text span { color: #4f46e5; }
+                .brand-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    position: relative;
+                    z-index: 1;
+                    padding: 2px;
+                }
+
+                .brand-name {
+                    display: flex;
+                    align-items: baseline;
+                }
+
+                .mj-text {
+                    font-family: 'Plus Jakarta Sans', sans-serif;
+                    font-weight: 800;
+                    font-size: 1.4rem;
+                    color: #4f46e5; /* Indigo */
+                    letter-spacing: -0.5px;
+                }
+
+                .virus-text {
+                    font-family: 'Plus Jakarta Sans', sans-serif;
+                    font-weight: 800;
+                    font-size: 1.4rem;
+                    color: #0f172a; /* Black */
+                    letter-spacing: -0.5px;
+                }
+
+                .official-text {
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                    color: #64748b;
+                    margin-left: 4px;
+                }
+
+                .nav-logo {
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 8px; /* Curved square */
+                    object-fit: cover;
+                    border: 2px solid #ffffff; /* Inner white gap */
+                    box-shadow: 0 0 0 2px #4f46e5, 0 4px 10px rgba(79, 70, 229, 0.2); /* Outer indigo ring + soft shadow */
+                }
 
                 .nav-links-wrapper {
                     display: flex;
@@ -121,17 +166,29 @@ const Navbar = () => {
                 }
 
                 @media (max-width: 480px) {
-                    .brand-text { display: none; }
-                    .nav-container-inner { justify-content: center; }
-                    .nav-link-item svg { font-size: 1.25rem; }
-                    .nav-links-wrapper { gap: 18px; padding-left: 10px !important; } 
+                    .brand-wrapper { margin-left: 5px; }
+                    .brand-content { gap: 8px; }
+                    .mj-text, .virus-text { font-size: 1.4rem; }
+                    .official-text { display: inline; font-size: 0.7rem; margin-left: 2px; }
+                    .nav-logo { width: 36px; height: 36px; border: 1.5px solid #ffffff; border-radius: 8px; box-shadow: 0 0 0 1.5px #4f46e5; }
+                    .nav-container-inner { justify-content: space-between; width: 98%; }
+                    .nav-link-item svg { font-size: 1.1rem; }
+                    .nav-links-wrapper { gap: 4px; padding-left: 0 !important; } 
+                    .nav-link-item { padding: 6px; }
                 }
             `}</style>
 
             <nav className={`navbar-smart ${isVisible ? '' : 'hidden'}`}>
                 <div className="nav-container-inner">
-                    <NavLink to="/" className="brand-text">
-                        Mjvirus<span>official</span>
+                    <NavLink to="/" className="brand-wrapper">
+                        <div className="brand-content">
+                            <img src="/MyAlbums/portfolioGalary/1744570911550.jpg" alt="Logo" className="nav-logo" />
+                            <div className="brand-name">
+                                <span className="mj-text">Mj</span>
+                                <span className="virus-text">virus</span>
+                                <span className="official-text">official</span>
+                            </div>
+                        </div>
                     </NavLink>
 
                     <div className="nav-links-wrapper">
