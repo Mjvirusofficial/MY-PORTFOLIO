@@ -1,8 +1,7 @@
 import React from 'react';
 import './About.css';
 import img2 from '../image/img2.jpg';
-import { FaWhatsapp, FaEnvelope, FaTerminal, FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaInstagram, FaLinkedin, FaGithub, FaCloud } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiMongodb, SiGithubactions } from 'react-icons/si';
+import { FaWhatsapp, FaEnvelope, FaTerminal, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import Skills from '../Component/Skills/Skills';
 
